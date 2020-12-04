@@ -1,21 +1,13 @@
 * { 
-<<<<<<< HEAD
     background-color: #BAF2E9;
     font-family: 'Nanum Brush Script', cursive;
 }
 /* 👇start header👇 */
-#header{
+/* #header{
      min-width: 60px; 
-    min-height: 50px0px;
+    min-height: 50px
+    
     /*
-=======
-    background-color: #F6FFF8;
-}
-/* start header */
-#header{
-    /* min-width: 60px; 
-    min-height: 250px;
->>>>>>> dde30b74c2061606957da0a91a15e8234e2ccb93
      border: 5px solid blue; deze line weg houden
     border-radius: 9px;
     display: inline-block;
@@ -25,14 +17,33 @@
     box-sizing: border-box;
     border-style: solid;
     border-color: #A4C3B2;
-    border-width: 3px; */
-<<<<<<< HEAD
+    border-width: 3px; 
     font-family: 'IBM Plex Sans', sans-serif;
     border: 4px solid #F2BAC9;
     background-color: #F2E2BA;
     margin-bottom: 50px;
     font-size: 30px;
-
+} */
+#header{
+    min-width: 60px; 
+   min-height: 60px;
+   display: inline-block;
+   /*
+    border: 5px solid blue; deze line weg houden
+   border-radius: 9px;
+   display: inline-block;
+   background-color: #EAF4F4;
+   margin: 17px;
+   padding: 10px;
+   box-sizing: border-box;
+   border-style: solid;
+   border-color: #A4C3B2;
+   border-width: 3px; */
+   font-family: 'IBM Plex Sans', sans-serif;
+   border: 4px solid #F2BAC9;
+   /* background-color: #F2E2BA; */
+   margin-bottom: 50px;
+   font-size: 30px;
 } 
 .menuknop{
     float: right;
@@ -41,13 +52,6 @@
 }
 /* einde header */
 /* 👇start content👇 */
-=======
-    border: 4px dotted blue;
-background-color: bisque;
-
-} 
-/* einde header */
->>>>>>> dde30b74c2061606957da0a91a15e8234e2ccb93
 #photos{
     margin: 0px;
     min-width: 250px;
@@ -57,16 +61,7 @@ background-color: bisque;
     margin: 0px;
     
 }
-<<<<<<< HEAD
 /* 👇text en fotos en shit👇*/
-=======
-.menuknop{
-    float: right;
-    height: 25px;
-    width: 75px;
-}
-
->>>>>>> dde30b74c2061606957da0a91a15e8234e2ccb93
 #content{
     border: 4px solid black;
     background-color: BAD7F2;
