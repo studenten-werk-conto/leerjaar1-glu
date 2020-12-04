@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio Constantijn van Hartesveldt</title>
+    <link href="assets/css/content.css" rel="stylesheet">
+    <link rel="stylesheet" href="/path/to/styles/default.css">
+    <script src="/path/to/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="galerij.html">galerij</a>
+                </li>
+                <li>
+                    <a href="index.html">wie ben ik?/home</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">contact</a>
+                </li>
+                <!-- <div id="instagram">
+                    <a href="https://www.instagram.com/constantijn3/ "> <img src="assets/images/ig.png"alt="follow my instagram"></a>
+                </div> -->
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.instagram.com/constantijn3/ "> <img src="assets/images/ig.png"
+                    alt="follow my social"></a>
+        </div>
+        <div class="social">
+            <a href="https://github.com/cvanh"> <img src="assets/images/github2.png" alt="follow my social"></a>
+        </div>
+        <div class="social">
+            <a href="https://www.reddit.com/user/reddithasaproblem"> <img src="assets/images/reddit1.png"
+                    alt="follow my reddit"></a>
+        </div>
+    </header>
+
+    <div class="galerij">
+
+        <div class="projecten">
+            <p class="tekst">rekenmachine</p>
+            <img src="assets/images/rekenmachine.png" alt="rekenmachine">
+            <p>voor school moesten wij een funterende rekenmachine maken html en css werdt aan gelevert en we moesten
+                toen de javascript zelf schrijven
+                ik heb hier zelfstandig: pi, cos, tan, cas toegevoegd </p>
+        </div>
+        <br>
+        <div class="projecten">
+            <p class="tekst">project 2</p>
+            <img src="assets/images/OrFKTLu.png" alt="python json" height="250px">
+            <p>We moesten voor school een formulier maken die de waarde checkte met php en terug roepte.</p>
+        </div>
+        <br>
+        <div class="projecten">
+            <p class="tekst">project 3</p>
+            <pre><code class="python" action="python">
+            import json
+            import requests
+            woord = input ("elk synoniem wil je weten? > ")
+            vraag = requests.get("https://api.datamuse.com/words?ml="+woord)
+            gegevens = vraag.json()
+            for x in gegevens:
+            print(x['word'])
+                </code></pre>
+            <p>Voor school moesten wij een script maken die data verzamelde vanuit een json formaat en uit printen in
+                terminal. </p>
+        </div>
+        <br>
+
+        <div class="projecten">
+            <p class="tekst">en mijn github</p>
+            <div class="github-card" data-github="cvanh" data-width="400" data-height="" data-theme="medium"></div>
+            <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+        </div>
+
+    </div>
+
+    <br>
+    <div id="contactinfo">
+        <a href="mailto:constantijnvanhaa+websiteglu@gmail.nl?subject=mail_portofolio">stuur mij een email</a>
+        <br>
+        <a href="tel:0623440513">neem conact met mij op: 0623445013</a>
+        <script src="assets/js/script.js"></script>
+    </div>
+</body>
+
+</html>
