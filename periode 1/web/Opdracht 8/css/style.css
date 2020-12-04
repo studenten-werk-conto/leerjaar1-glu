@@ -1,0 +1,14 @@
+@charset
+
+a {
+	font-size: 15px;
+	color: #784040;
+	padding: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:Hover {
+	color: #a8a8a8
+
+}

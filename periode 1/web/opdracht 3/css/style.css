@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+#header{
+    background-image: url("http://jos.gluweb.nl/lessen/web/blue.png");
+    background-repeat: no-repeat;
+    height: 150px;
+    text-align: center;
+    width: 920px;
+    color: #808080;
+    font-size: 25px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+} 
+
+#content{
+    background-color: #292929;
+    height: 150px;
+    text-align: center;
+    width: 920px;
+    color: #292929;
+    font-size: 30;
+}
+
+#footer{
+    background-color: #ffa31a;
+    height: 60px;
+    text-align: left;
+    width: 920px;
+    color: #1b1b1b;
+    font-size: large;
+
+}
+#div1	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	
+
+}
+#div2{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+}
+#div3	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+}
+
+#div4	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+
+
+#div5	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div6	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div7	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div8	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div9	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div10	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div11	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div12	{
+	background-color:#c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div13	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div14	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div15	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div16	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div17	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div18	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div19	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div20	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div21	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div22	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div23	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div24	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div25	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div26	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+
+}
+#div27{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+}
+
+#div28	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+}
+
+#div29	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+
+
+#div30	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div31	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div32	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div33	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div34	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div35	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div36	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div37	{
+	background-color:#c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div38	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div39	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div40	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div41	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div42	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div43	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div44	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div45	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div46	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div47	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div48	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div49	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div50	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div51	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div52	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div53	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div54	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div55	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div56	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div57	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div58	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div59	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div60	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div61	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div62	{
+	background-color: #ffffff;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
+#div63	{
+	background-color: #c9c9c9;
+	display: inline-block;
+	height: 60px;
+	width: 60px;
+	}
