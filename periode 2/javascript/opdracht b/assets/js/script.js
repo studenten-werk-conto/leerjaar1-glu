@@ -11,12 +11,12 @@ var button1 = document.getElementById("button1")
 var button2 = document.getElementById("button2")
 var button3 = document.getElementById("button3")
 var button4 = document.getElementById("button4")
-var item3 = document.getElementById("item3")
+// var item3 = document.getElementById("item3")
 button1.addEventListener("click", button2);
 
 function button2() { //verandert kleur
   console.log ("kleur veranderen");
-  item3.body.style.backgroundColor = "red"; 
+  document.body.style.backgroundColor = "red"; 
 } 
 
 button2.addEventListener("click", button1); // verandert volgorde
