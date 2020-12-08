@@ -1,0 +1,13 @@
+* {
+    background-color: bisque;
+}
+#cell{
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    border: 2px;
+    border-color: black;
+}
+.cell:hover{
+    background-color: red;
+}
