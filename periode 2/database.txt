@@ -1,0 +1,7 @@
+opdracht 1
+a SELECT achternaam, voornaam, tussenvoegsel FROM `namen` 
+b SELECT * FROM `namen` WHERE tussenvoegsel<>'' 
+c SELECT DISTINCT voornaam FROM `namen` 
+d SELECT * FROM `activiteiten` WHERE 1 ORDER BY `a_naam` ASC 
+
+

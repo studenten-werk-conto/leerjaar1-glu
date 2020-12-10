@@ -1,0 +1,124 @@
+/* ------------------------------------------------------------------------- */
+
+/* TO BE IMPLEMENTED: kortingscode visualization in basket */
+
+.shopping-cart--overview .js_coupon_form .formlabel__text {
+display: none;
+}
+
+
+.shopping-cart--overview .js_coupon_form a.link-cta:after {
+content: "Cadeaukaartcode invoeren";
+font-size: 14px;
+}
+
+
+.shopping-cart--overview .js_coupon_form a.link-cta {
+font-size: 0px;
+}
+
+.shopping-cart--overview .js_coupon_form a.link-cta:hover:after {
+text-decoration: underline;
+} 
+
+/* ------------------------------------------------------------------------- */
+
+/* Belgium - usp ribbon in basket */
+
+html.is-desktop.no-touch:lang(nl-BE) .shopping-cart--header:after {
+content: "\e611 \00a0 \00a0 1,7 miljoen Belgische klanten gingen je voor \00a0 \00a0 \00a0 \e611 \00a0 \00a0 Veilig & vertrouwd \00a0 \00a0 \00a0 \e611 \00a0 \00a0 Gratis binnen 30 dagen retourneren \00a0 \00a0 \00a0 \e611 \00a0 \00a0 Gratis verzending boven 20,- ";
+font-size: 12px;
+font-family: "Bol Symbols", "Open Sans";
+display: block;
+
+}
+
+html.is-desktop.touch_supported:lang(nl-BE) .shopping-cart--header:after {
+content: "\e611 \00a0 \00a0 1,7 miljoen Belgische klanten gingen je voor \00a0 \00a0 \00a0 \e611 \00a0 \00a0 Gratis binnen 30 dagen retourneren \00a0 \00a0 \00a0 \e611 \00a0 \00a0 Gratis verzending boven 20,- ";
+font-size: 12px;
+font-family: "Bol Symbols", "Open Sans";
+display: block;
+
+}
+html:lang(nl-BE) .closeness-qualifier__message {
+display: none!important;
+}
+
+html:lang(nl-BE) .shopping-cart--header {
+margin-bottom:14px;
+}
+html:lang(nl-BE) .shopping-cart--header .closeness-qualifier {
+margin-bottom:10px;
+}
+
+html.is-mobile:lang(nl-BE) .shopping-cart--header:after {
+content: "\e611 \00a0 \00a0 Gratis binnen 30 dagen retourneren \a \e611 \00a0 \00a0 Gratis verzending boven 20,- ";
+font-size: 12px;
+font-family: "Bol Symbols", "Open Sans";
+display: block;
+white-space: pre;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Fix for heading logo checkout */
+
+    .main-logo{padding:0;font-size:1em;line-height:inherit}.main-logo__print{display:none}.main-logo__link{display:block;width:8.21429em;height:1.78571em}@media screen and (min-width:48em){.main-logo__link{width:10em;height:2.5em}}.header-fixed .main-logo__link{width:10em;height:2.5em}.main-logo__svg{width:100%;height:100%}
+
+/* ------------------------------------------------------------------------- */
+
+/* checkout fix Martijn en Roland */
+*, :after, :before {
+  box-sizing: inherit;
+}
+
+/* Quick fix for override above */
+.payment-methods-body .payment-methods-options .payment-options .option-bank a {
+  box-sizing: content-box;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* TO BE IMPLEMENTED: bug fix for checkout color */
+
+.checkout_form fieldset.sendform,
+.checkout_form .payment_option fieldset.sendform {
+  background: #f0f6ff;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* Start: Hide personal message input field for giftwrap in basket */
+wsp-giftwrap-personal-message {
+    display: none;
+}
+
+/* Hide personal message fields in old checkout */
+p#personal_message_counter {
+    display: none;
+}
+
+textarea#personal_message {
+    display: none;
+}
+
+label.formlabel--block[for=giftWrap\.message] {
+    visibility: hidden;
+}
+
+/* End: Hide personal message input field for giftwrap in basket */
+/* ------------------------------------------------------------------------- */
+
+/* Needs clean-up: add bold font to shopping shipping basket NL text above*/
+.shopping-cart--header .h-color-inform-text {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* fix for navigation, WSPMAIN-4429 */ 
+.wsp-sub-nav__item--collapse-after-visible~.wsp-category-nav__item, .wsp-sub-nav__item--collapse-after-visible~.wsp-sub-nav__item {
+    animation: slide-in-from-right .5s;
+}
+
