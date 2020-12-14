@@ -4,4 +4,16 @@ b SELECT * FROM `namen` WHERE tussenvoegsel<>''
 c SELECT DISTINCT voornaam FROM `namen` 
 d SELECT * FROM `activiteiten` WHERE 1 ORDER BY `a_naam` ASC 
 
+opdracht 2
+a
+b
+c
+d
 
+odpracht 3
+a
+b
+c
+d
+
+opdracht 4
