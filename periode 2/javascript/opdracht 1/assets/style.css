@@ -1,12 +1,15 @@
-* {
+/* * {
     background-color: bisque;
-}
-#cell{
-    background-color: blue;
+} */
+.cell{
+    background-color: white;
     height: 20px;
     width: 20px;
     border: 2px;
-    border-color: black;
+    /* border-color: black; */
+    border: 1px black;
+    border-style: solid;
+    display: inline-block;
 }
 .cell:hover{
     background-color: red;
