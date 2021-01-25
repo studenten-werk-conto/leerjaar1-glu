@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+www.bol.com	TRUE	/nl	FALSE	1999999999	XSRF-TOKEN	70352d69-0625-41eb-ad47-c5c7de403812
+www.bol.com	TRUE	/nl	FALSE	1999999999	JSESSIONID	mNgQp3NRubykUjPRxfr5y51HriYNAJsqyXV1di5v.ps33
+www.bol.com	TRUE	/nl	FALSE	1999999999	fdbk	2
+www.bol.com	TRUE	/nl	FALSE	1999999999	locale	nl_BE
+www.bol.com	TRUE	/nl	FALSE	1999999999	shopping_session_id	f77c9bf4bccee68f0454c672fdd0eefaf0ea7bd54738c87e54e72edfb3578303
+www.bol.com	TRUE	/	FALSE	1999999999	bltgSessionId	1d6ddeb1-07f9-4fdf-93d8-fe6ca805f744
+www.bol.com	TRUE	/	FALSE	1999999999	bolConsentChoices	4
+www.bol.com	TRUE	/	FALSE	1999999999	abt_aid	3590#3582#3703#3682#3392#3062#1740#3431#3694#1457#2613#3704#1291#3280#3679#3483#3495#3617#3528#3331#2552#2247#2167#3696#3700
+www.bol.com	TRUE	/	FALSE	1999999999	abt_aid_session	true
+www.bol.com	TRUE	/	FALSE	1999999999	BUI	si50dn5fpeymbq1056cqrb811zk25b2x
+www.bol.com	TRUE	/	FALSE	1999999999	SameSite	None
+bol.com	TRUE	/	FALSE	1999999999	XSC	wUAZVbdudYMP6ZNFCIOVD4rjSHslq8aG
+www.bol.com	TRUE	/	FALSE	1999999999	P	.wspc134
+

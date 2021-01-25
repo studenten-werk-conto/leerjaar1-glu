@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cc335b51d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="img/coolblue.png">
+            test
+        </div>
+        <div class="content">
+            <div class="title">
+                <div class="titlebig">
+                    JE GEGEVENS <p class="dot">.</p>
+                </div>
+                <div class="titlesmall">
+                    Wat moet er op de factuur staan?
+                </div>
+            </div>
+            <div class="vragen">
+                <div class="factuurtitle">
+                    <p class="pbestelling">Type bestelling </p>
+                    <p class="paanhef">Aanhef </p>
+                    <p class="pnaam">Naam</p>
+                    <p class="pcode">Postcode</p>
+                    <p class="phuis">Huisnummer</p>
+                    <p class="pland">Land</p>
+                    <p class="paflever">Afleveradres</p>
+                    <p class="pmail"><i class="fas fa-question-circle"></i>E-mailadres</p>
+                    <p class="ptele"><i class="fas fa-question-circle"></i>Telefoonnummer</p>
+                    <p class="pdate"><i class="fas fa-question-circle"></i>Geboortedatum</p>
+                    <p class="pverzend"><i class="fas fa-question-circle"></i>Verzendwijze factuur</p>
+                    <p class="pnieuws"><i class="fas fa-question-circle"></i>Nieuwsbrief</p>
+                    <p class="pkleur"><i class="fas fa-question-circle"></i>Kleur verpakking</p>
+                </div>
+                <div class="factuurinput">
+                    <form>
+                        <input type="radio" name="bestelling">
+                        <label class="parti">Particulier</label>
+                        <input type="radio" name="bestelling">
+                        <label class="zaak">Zakelijk</label>
+                        <br>
+                        <input type="radio" name="aanhef">
+                        <label class="dhr">Dhr.</label>
+                        <input type="radio" name="bestelling">
+                        <label class="mevr">Mevr.</label>
+                        <br>
+                        <input type="text" placeholder="Voornaam" class="naam">
+                        <input type="text" placeholder="Tussenv." class="tussen">
+                        <input type="text" placeholder="Achternaam" class="naam">
+                        <br>
+                        <input type="text" placeholder="1234AB" class="post">
+                        <br>
+                        <input type="number" placeholder="Nr." class="huisnum">
+                        <input type="text" placeholder="Toev." class="huistus">
+                        <br>
+                        <p class="landnl">Nederlan<p class="landbe">   <i class="fas fa-chevron-right"></i>   In België laten bezorgen</p>
+                        <br>
+                        <input type="radio" class="mijn">
+                        <label class="mijnlab">Op bovendstaand adres bezorgen</label>
+                        <input type="radio" class="ander">
+                        <label class="anderlab">Op ander adres bezorgen</label>
+                        <br>
+                        <input type="email" class="mail">
+                        <br>
+                        <input type="tel" class="tel">
+                        <br>
+                        <input type="date" placeholder="dd-mm-jjjj" class="geboor">
+                        <br>
+                        <input type="radio" class="facmail">
+                        <label class="mijnlab">Factuur per e-mail</label>
+                        <input type="radio" class="facprint">
+                        <label class="anderlab">Factuur geprint bij bestelling</label>
+                        <br>
+                        <input type="checkbox">
+                        <label class="ja">Ja, ik wil de Coolblue-nieuwsbrief met 
+                            <p class="bon">€5,-cadeaubon</p> <p class="voor">voor</p>
+                            <br>
+                            <p class="jalijn">mijn volgende bestelling</p>
+                        </label>
+                        <br>
+                        <input type="color" class="color">
+                    </form>
+                </div>
+            </div>
+            <div class="title2">
+                <div class="titlebig">
+                    BEWAAR JE GEGEVENS <p class="dot2">.</p>
+                </div>
+                <div class="titlesmall">
+                    Handig voor de volgende keer.
+                </div>
+            </div>
+            <div class="vragen">
+                <div class="factuurtitle">
+                    <p class="ww"><i class="fas fa-question-circle"></i>Wachtwoord</p>
+                    <p class="ww2"><i class="fas fa-question-circle"></i>Wachtwoord bevestigen</p>
+                </div>
+                <div class="factuurinput">
+                    <form>
+                        <input type="password" class="inww"><br>
+                        <p class="wwlijn">Minimaal 6 karakters.</p>
+                        <p class="wwlijn2">Verder doen we niet moeilijk.</p>
+                        <input type="password" class="inww2">
+                    </form>
+                </div>
+            </div>
+            <div class="verder">
+                <div class="button"><p class="verd">Verder</p></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-left">
+                <h1 class="white phone-footer"><i class="fas fa-phone-square-alt"></i></h1>
+                <h1 class="white">BEL 010 7988999<span class="orange">.</span></h1>
+                <p class="lighterblue">Voor acute service.</p><br>
+                <p class="white bold right">Onze klantenservice is nu open.</p>
+                <p class="lighterblue right">Je kunt ons 7 dagen per week bereiken. Vandaag is<br> de klantenservice tot 23.59 uur open.</p>
+
+            </div>
+            <div class="footer-right">
+                <h1 class="white">SERVICE<span class="orange">.</span></h1>
+                <p class="lighterblue">Onderdeel van Coolblue.</p><br>
+                <p class="white"><i class="fas fa-check-square"></i>    Gratis verzenden & retourneren</p>
+                <p class="white"><i class="fas fa-check-square"></i>    Voor 23.59 uur besteld, morgen in huis</p>
+                <p class="white"><i class="fas fa-check-square"></i>    Track & Trace, volg ke pakket</p>
+                <p class="white"><i class="fas fa-check-square"></i>    Statusupdates via de e-mail</p>
+                <p class="white"><i class="fas fa-check-square"></i>    Winkels in Amsterdam, Eindhoven, Groningen, Rotterdam en Utrecht</p>
+            </div>
+        </div>
+        <div class="footer-2">
+            <div class="logos">
+                <img src="img/thuiswinkel-logo.png">
+                <img src="img/ideal-logo.png">
+                <img src="img/mastercard-logo.png">
+                <img src="img/visa-logo.png">
+                <img src="img/paypal-logo.png">
+                <img src="img/postnl-logo.png">
+            </div>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
