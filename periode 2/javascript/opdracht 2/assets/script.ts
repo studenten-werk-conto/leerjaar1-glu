@@ -1,16 +1,17 @@
-// import * as dat from 'dat.gui'; 
+// import * as dat from 'dat.gui';
 // const gui = new dat.GUI();
 
-// https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd dat.gui 
+// https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd dat.gui
 let trees; // maakt een var voor dat je hem oproept
 let overlap = false; // als true wordt dan is de auto gechrashed
-const debug = true // als de debug 
-let snelheid:number = 100 // snelheid TODO FIX
+const debug = true; // als de debug
+let snelheid: number = 100; // snelheid TODO FIX
 let beweeg = document.getElementById("beweeg");
 let left = 100;
 let topp = 100;
-let car = document.getElementById("car") // roept de auto in html naar js
-let crashcounter = document.getElementById("crashcounter")
+let car = document.getElementById("car"); // roept de auto in html naar js
+let crashcounter = document.getElementById("crashcounter");
+let count:number = 0
 
 // var FizzyText = function () {
 //   this.message = 'dat.gui';
@@ -34,14 +35,14 @@ let crashcounter = document.getElementById("crashcounter")
 
 // // einde cheat menu
 
-
-for (let index = 0; index < 5; index++) { // spawnt bomen 
-  let img = document.createElement("img");
-  img.src = 'assets/img/tree.jpg';
-  img.className = 'tree';
+for (let index = 0; index < 10; index++) {
+  // spawnt bomen
+  let img = document.createElement("object");
+  img.data = "assets/img/tree.jpg";
+  img.className = "tree";
   // op line ↓ col 32 stond eerst 80 op line ↓↓ col 31 stond 80
-  img.style.left = Math.random() * 90 + '%';
-  img.style.top = Math.random() * 100 + '%';
+  img.style.left = Math.random() * 90 + "%";
+  img.style.top = Math.random() * 100 + "%";
   document.getElementById("container").appendChild(img);
 }
 
@@ -55,40 +56,53 @@ document.addEventListener("keydown", function logKey(e) {
   }
   if (key == "ArrowUp") {
     topp--;
-    beweeg.style.transform = "rotate(-90deg)"; 
+    beweeg.style.transform = "rotate(-90deg)";
   }
   if (key == "ArrowDown") {
     topp++;
-    beweeg.style.transform = "rotate(-270deg)"; 
+    beweeg.style.transform = "rotate(-270deg)";
   }
   if (key == "ArrowLeft") {
     left--;
-    beweeg.style.transform = "rotate(180deg)"; 
+    beweeg.style.transform = "rotate(180deg)";
   }
   if (key == "ArrowRight") {
-    left++; 
-    beweeg.style.transform = "rotate(0deg)"; 
+    left++;
+    beweeg.style.transform = "rotate(0deg)";
   }
-  //console.log(left + " : " + topp);  
+  //console.log(left + " : " + topp);
 
   beweeg.style.left = left + "px";
   beweeg.style.top = topp + "px";
 });
+if (beweeg.location <= Object.location) {
+  chrash();
+  if(debug == true){
+      console.log("je bent gecrashed dit is door de .location")
+  }
+}
 
-function chrash() { /// maakt de chrash 
+function chrash() {
+  /// maakt de chrash
   let trees = document.getElementsByClassName("tree");
   let overlap = false;
   for (let index = 0; index < trees.length; index++) {
-    overlap = !(car.getBoundingClientRect().right < trees[index].getBoundingClientRect().left ||
-      car.getBoundingClientRect().left            < trees[index].getBoundingClientRect().right ||
-      car.getBoundingClientRect().bottom          < trees[index].getBoundingClientRect().top ||
-      car.getBoundingClientRect().top             < trees[index].getBoundingClientRect().bottom);
-      if(overlap){
-        crashcounter += "1";
-        car.src = './assets/img/car' + crashcounter + '.png';
-        console.log('crashcounter' + crashcounter);
-        return true;
-      }
+    overlap = !(
+      car.getBoundingClientRect().right <
+      trees[index].getBoundingClientRect().left ||
+      car.getBoundingClientRect().left <
+      trees[index].getBoundingClientRect().right ||
+      car.getBoundingClientRect().bottom <
+      trees[index].getBoundingClientRect().top ||
+      car.getBoundingClientRect().top <
+      trees[index].getBoundingClientRect().bottom
+    );
+    if (overlap) {
+      crashcounter += count;
+      car.src = "./assets/img/car" + crashcounter + ".png";
+      console.log("crashcounter" + crashcounter);
+      return true;
+    }
   }
   return overlap;
 }
