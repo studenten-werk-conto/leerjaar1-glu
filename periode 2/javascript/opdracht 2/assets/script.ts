@@ -1,23 +1,19 @@
-"use strict";
-
 // import * as dat from 'dat.gui';
 // const gui = new dat.GUI();
+
 // https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd dat.gui
-var trees; // maakt een var voor dat je hem oproept
+let trees; // maakt een var voor dat je hem oproept
+let overlap = false; // als true wordt dan is de auto gechrashed
+const debug = true; // als de debug
+let snelheid: number = 100; // snelheid TODO FIX
+let beweeg = document.getElementById("beweeg");
+let left = 100;
+let topp = 100;
+let car = document.getElementById("car"); // roept de auto in html naar js
+let crashcounter = document.getElementById("crashcounter");
+let count:number = 0
 
-var overlap = false; // als true wordt dan is de auto gechrashed
-
-var debug = true; // als de debug
-
-var snelheid = 100; // snelheid TODO FIX
-
-var beweeg = document.getElementById("beweeg");
-var left = 100;
-var topp = 100;
-var car = document.getElementById("car"); // roept de auto in html naar js
-
-var crashcounter = document.getElementById("crashcounter");
-var count = 0; // var FizzyText = function () {
+// var FizzyText = function () {
 //   this.message = 'dat.gui';
 //   this.snelheid = 0.8;
 //   this.displayOutline = false;
@@ -27,6 +23,7 @@ var count = 0; // var FizzyText = function () {
 //   console.log("je hebt iets niet aan geklikt")
 //   //   // Define render logic ...TODO FIX THIS FUCKING MESS WOULDNT IMPORT
 // };
+
 // window.onload = function () {
 //   var text = new FizzyText();
 //   var gui = new dat.GUI();
@@ -35,14 +32,15 @@ var count = 0; // var FizzyText = function () {
 //   gui.add(text, 'displayOutline');
 //   gui.add(text, 'explode');
 // };
+
 // // einde cheat menu
 
-for (var index = 0; index < 10; index++) {
+for (let index = 0; index < 10; index++) {
   // spawnt bomen
-  var img = document.createElement("object");
+  let img = document.createElement("object");
   img.data = "assets/img/tree.jpg";
-  img.className = "tree"; // op line ↓ col 32 stond eerst 80 op line ↓↓ col 31 stond 80
-
+  img.className = "tree";
+  // op line ↓ col 32 stond eerst 80 op line ↓↓ col 31 stond 80
   img.style.left = Math.random() * 90 + "%";
   img.style.top = Math.random() * 100 + "%";
   document.getElementById("container").appendChild(img);
@@ -50,54 +48,55 @@ for (var index = 0; index < 10; index++) {
 
 beweeg.style.left = left + "px";
 beweeg.style.top = topp + "px";
+
 document.addEventListener("keydown", function logKey(e) {
   var key = e.key;
-
   if (debug == true) {
     console.log(key);
   }
-
   if (key == "ArrowUp") {
     topp--;
     beweeg.style.transform = "rotate(-90deg)";
   }
-
   if (key == "ArrowDown") {
     topp++;
     beweeg.style.transform = "rotate(-270deg)";
   }
-
   if (key == "ArrowLeft") {
     left--;
     beweeg.style.transform = "rotate(180deg)";
   }
-
   if (key == "ArrowRight") {
     left++;
     beweeg.style.transform = "rotate(0deg)";
-  } //console.log(left + " : " + topp);
-
+  }
+  //console.log(left + " : " + topp);
 
   beweeg.style.left = left + "px";
   beweeg.style.top = topp + "px";
 });
-
 if (beweeg.location <= Object.location) {
   chrash();
-
-  if (debug == true) {
-    console.log("je bent gecrashed dit is door de .location");
+  if(debug == true){
+      console.log("je bent gecrashed dit is door de .location")
   }
 }
 
 function chrash() {
   /// maakt de chrash
-  var trees = document.getElementsByClassName("tree");
-  var overlap = false;
-
-  for (var index = 0; index < trees.length; index++) {
-    overlap = !(car.getBoundingClientRect().right < trees[index].getBoundingClientRect().left || car.getBoundingClientRect().left < trees[index].getBoundingClientRect().right || car.getBoundingClientRect().bottom < trees[index].getBoundingClientRect().top || car.getBoundingClientRect().top < trees[index].getBoundingClientRect().bottom);
-
+  let trees = document.getElementsByClassName("tree");
+  let overlap = false;
+  for (let index = 0; index < trees.length; index++) {
+    overlap = !(
+      car.getBoundingClientRect().right <
+      trees[index].getBoundingClientRect().left ||
+      car.getBoundingClientRect().left <
+      trees[index].getBoundingClientRect().right ||
+      car.getBoundingClientRect().bottom <
+      trees[index].getBoundingClientRect().top ||
+      car.getBoundingClientRect().top <
+      trees[index].getBoundingClientRect().bottom
+    );
     if (overlap) {
       crashcounter += count;
       car.src = "./assets/img/car" + crashcounter + ".png";
@@ -105,6 +104,5 @@ function chrash() {
       return true;
     }
   }
-
   return overlap;
 }
