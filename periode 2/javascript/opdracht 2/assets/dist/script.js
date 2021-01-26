@@ -1,6 +1,6 @@
-// import * as dat from 'dat.gui';
+// import * as dat from 'dat.gui'; 
 // const gui = new dat.GUI();
-// https://www.youtube.com/watch?v=k238XpMMn38 
+// https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd dat.gui 
 var trees; // maakt een var voor dat je hem oproept
 var overlap = false; // als true wordt dan is de auto gechrashed
 var debug = true; // als de debug 
@@ -47,15 +47,19 @@ document.addEventListener("keydown", function logKey(e) {
     }
     if (key == "ArrowUp") {
         topp--;
+        beweeg.style.transform = "rotate(-90deg)";
     }
     if (key == "ArrowDown") {
         topp++;
+        beweeg.style.transform = "rotate(-270deg)";
     }
     if (key == "ArrowLeft") {
         left--;
+        beweeg.style.transform = "rotate(180deg)";
     }
     if (key == "ArrowRight") {
         left++;
+        beweeg.style.transform = "rotate(0deg)";
     }
     //console.log(left + " : " + topp);  
     beweeg.style.left = left + "px";
