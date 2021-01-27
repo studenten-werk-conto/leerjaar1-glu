@@ -1,19 +1,18 @@
 // const { Collisions } = require('detect-collisions');
 
-
-// https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd dat.gui
+// https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd een crash lib
 let trees; // maakt een var voor dat je hem oproept
 let overlap = false; // als true wordt dan is de auto gechrashed
 const debug = true; // als de debug
-let snelheid:number = 100; // snelheid TODO FIX
+let snelheid: number = 100; // snelheid TODO FIX
 let beweeg = document.getElementById("beweeg");
 let left = 100;
 let topp = 100;
-let car = document.getElementById("car"); // roept de auto in html naar js
+let car = document.getElementById("beweeg"); // roept de auto in html naar js
 let crashcounter = document.getElementById("crashcounter");
 let count: number = 0;
 
-console.log("js is ingeladen")
+console.log("js is ingeladen");
 
 for (let index = 0; index < 10; index++) {
   // spawnt bomen
@@ -88,25 +87,65 @@ document.addEventListener("keydown", function logKey(e) {
 //   }
 //   return overlap;
 // }
-function crash(){
-  trees = document.getElementsByClassName('tree'); 
-  var overlap = false; 
-  for(let index = 0; index < trees.length; index++) { 
-     overlap = !(car.getBoundingClientRect().right < trees[index].getBoundingClientRect().left ||
-                 car.getBoundingClientRect().left > trees[index].getBoundingClientRect().right || 
-                 car.getBoundingClientRect().bottom < trees[index].getBoundingClientRect().top ||
-                 car.getBoundingClientRect().top > trees[index].getBoundingClientRect().bottom); 
-           if(overlap) { 
-             console.log("KOOP EEN RIJBEWIJS OFZO")
-              crashcounter++;
-              document.getElementById("crashcounter").innerHTML = crashcounter;
-              car.src = "./assets/img/car" + crashcounter + ".png";
-              if (crashcounter <= 5) {
-                  // can_drive = false;
-              }
-              return true; 
-           }                        
+// function crash() {
+//   trees = document.getElementsByClassName("tree");
+//    car = document.getElementById("beweeg");
+//   var overlap = false;
+//   for (let index = 0; index < trees.length; index++) {
+//     overlap = !(
+//       car.getBoundingClientRect().right <
+//         trees[index].getBoundingClientRect().left ||
+//       car.getBoundingClientRect().left >
+//         trees[index].getBoundingClientRect().right ||
+//       car.getBoundingClientRect().bottom <
+//         trees[index].getBoundingClientRect().top ||
+//       car.getBoundingClientRect().top >
+//         trees[index].getBoundingClientRect().bottom
+//     );
+//     if (overlap) {
+//       console.log("KOOP EEN RIJBEWIJS OFZO");
+//       let een = 1;
+//       crashcounter = + een;
+//       document.getElementById("crashcounter").innerHTML = crashcounter;
+//       car.src = "./assets/img/car" + crashcounter + ".png";
+//       if (crashcounter <= 5) {
+//         // can_drive = false;
+//       }
+      
+//     }
+//     return true;
+//   }
+//   return overlap;
+// }
+let can_drive
+
+function crash() {
+  trees = document.getElementsByClassName("tree");
+   beweeg = document.getElementById("beweeg");
+  var overlap = false;
+  for (let index = 0; index < trees.length; index++) {
+    overlap = !(
+      beweeg.getBoundingClientRect().right <
+        trees[index].getBoundingClientRect().left ||
+      beweeg.getBoundingClientRect().left >
+        trees[index].getBoundingClientRect().right ||
+      beweeg.getBoundingClientRect().bottom <
+        trees[index].getBoundingClientRect().top ||
+      beweeg.getBoundingClientRect().top >
+        trees[index].getBoundingClientRect().bottom
+    );
+    if (overlap) {
+      console.log("KOOP EEN RIJBEWIJS OFZO");
+      let een = 1;
+      crashcounter = + een;
+      document.getElementById("crashcounter").innerHTML = crashcounter;
+      beweeg.src = "./assets/img/beweeg" + crashcounter + ".png";
+      if (crashcounter <= 5) {
+        can_drive = false;
+      }
+      
+    }
+    return true;
   }
   return overlap;
 }
-
