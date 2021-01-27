@@ -1,5 +1,4 @@
-// import * as dat from 'dat.gui';
-// const gui = new dat.GUI();
+// const { Collisions } = require('detect-collisions');
 // https://www.youtube.com/watch?v=k238XpMMn38 ^^ importeerd dat.gui
 var trees; // maakt een var voor dat je hem oproept
 var overlap = false; // als true wordt dan is de auto gechrashed
@@ -11,34 +10,17 @@ var topp = 100;
 var car = document.getElementById("car"); // roept de auto in html naar js
 var crashcounter = document.getElementById("crashcounter");
 var count = 0;
-// var FizzyText = function () {
-//   this.message = 'dat.gui';
-//   this.snelheid = 0.8;
-//   this.displayOutline = false;
-//   this.explode = function () {
-//     console.log("je hebt iets aangeklikt in de cheat menu")
-//   };
-//   console.log("je hebt iets niet aan geklikt")
-//   //   // Define render logic ...TODO FIX THIS FUCKING MESS WOULDNT IMPORT
-// };
-// window.onload = function () {
-//   var text = new FizzyText();
-//   var gui = new dat.GUI();
-//   gui.add(text, 'message');
-//   gui.add(text, 'snelheid', -5, 5);
-//   gui.add(text, 'displayOutline');
-//   gui.add(text, 'explode');
-// };
-// // einde cheat menu
+console.log("js is ingeladen");
 for (var index = 0; index < 10; index++) {
     // spawnt bomen
-    var img = document.createElement("object");
-    img.data = "assets/img/tree.jpg";
+    var img = document.createElement("img");
+    img.src = "assets/img/tree.jpg";
     img.className = "tree";
     // op line ↓ col 32 stond eerst 80 op line ↓↓ col 31 stond 80
     img.style.left = Math.random() * 90 + "%";
     img.style.top = Math.random() * 100 + "%";
     document.getElementById("container").appendChild(img);
+    // const point   = system.createPoint(10, 10);
 }
 beweeg.style.left = left + "px";
 beweeg.style.top = topp + "px";
@@ -67,29 +49,52 @@ document.addEventListener("keydown", function logKey(e) {
     beweeg.style.left = left + "px";
     beweeg.style.top = topp + "px";
 });
-if (beweeg.location <= Object.location) {
-    chrash();
-    if (debug == true) {
-        console.log("je bent gecrashed dit is door de .location");
-    }
-}
-function chrash() {
-    /// maakt de chrash
-    var trees = document.getElementsByClassName("tree");
+// if (beweeg.location <= trees.location) {
+//   chrash();
+//   if (debug == true) {
+//     console.log("je bent gecrashed dit is door de .location");
+//   }
+// }
+// function chrash() {
+//   /// maakt de chrash
+//   let trees = document.getElementsByClassName("tree");
+//   let overlap = false;
+//   for (let index = 0; index < trees.length; index++) {
+//     overlap = !(
+//       car.getBoundingClientRect().right <
+//         trees[index].getBoundingClientRect().left ||
+//       car.getBoundingClientRect().left <
+//         trees[index].getBoundingClientRect().right ||
+//       car.getBoundingClientRect().bottom <
+//         trees[index].getBoundingClientRect().top ||
+//       car.getBoundingClientRect().top <
+//         trees[index].getBoundingClientRect().bottom
+//     );
+//     if (overlap) {
+//       crashcounter += count;
+//       car.src = "./assets/img/car" + crashcounter + ".png";
+//       console.log("crashcounter" + crashcounter);
+//       return true;
+//     }
+//   }
+//   return overlap;
+// }
+function crash() {
+    trees = document.getElementsByClassName('tree');
     var overlap = false;
     for (var index = 0; index < trees.length; index++) {
-        overlap = !(car.getBoundingClientRect().right <
-            trees[index].getBoundingClientRect().left ||
-            car.getBoundingClientRect().left <
-                trees[index].getBoundingClientRect().right ||
-            car.getBoundingClientRect().bottom <
-                trees[index].getBoundingClientRect().top ||
-            car.getBoundingClientRect().top <
-                trees[index].getBoundingClientRect().bottom);
+        overlap = !(car.getBoundingClientRect().right < trees[index].getBoundingClientRect().left ||
+            car.getBoundingClientRect().left > trees[index].getBoundingClientRect().right ||
+            car.getBoundingClientRect().bottom < trees[index].getBoundingClientRect().top ||
+            car.getBoundingClientRect().top > trees[index].getBoundingClientRect().bottom);
         if (overlap) {
-            crashcounter += count;
+            console.log("KOOP EEN RIJBEWIJS OFZO");
+            crashcounter++;
+            document.getElementById("crashcounter").innerHTML = crashcounter;
             car.src = "./assets/img/car" + crashcounter + ".png";
-            console.log("crashcounter" + crashcounter);
+            if (crashcounter <= 5) {
+                // can_drive = false;
+            }
             return true;
         }
     }

@@ -11,6 +11,8 @@
     "url": "https://github.com/cvanh"
   },
   "dependencies": {
+    "bootstrap": "^4.6.0",
+    "detect-collisions": "^2.5.2",
     "typescript": "^4.1.3"
   },
   "devDependencies": {

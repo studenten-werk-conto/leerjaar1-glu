@@ -90,6 +90,10 @@ if (beweeg.location <= Object.location) {
   }
 }
 
+console.log(beweeg.location); // test 
+
+console.log(trees.location);
+
 function chrash() {
   /// maakt de chrash
   var trees = document.getElementsByClassName("tree");
