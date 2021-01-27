@@ -4,10 +4,10 @@ var trees; // maakt een var voor dat je hem oproept
 var overlap = false; // als true wordt dan is de auto gechrashed
 var debug = true; // als de debug
 var snelheid = 100; // snelheid TODO FIX
-var beweeg = document.getElementById("beweeg");
+// let beweeg = document.getElementById("beweeg");
 var left = 100;
 var topp = 100;
-var car = document.getElementById("beweeg"); // roept de auto in html naar js
+var car = document.getElementById("car"); // roept de auto in html naar js
 var crashcounter = document.getElementById("crashcounter");
 var count = 0;
 console.log("js is ingeladen");
@@ -22,8 +22,8 @@ for (var index = 0; index < 10; index++) {
     document.getElementById("container").appendChild(img);
     // const point   = system.createPoint(10, 10);
 }
-beweeg.style.left = left + "px";
-beweeg.style.top = topp + "px";
+car.style.left = left + "px";
+car.style.top = topp + "px";
 document.addEventListener("keydown", function logKey(e) {
     var key = e.key;
     if (debug == true) {
@@ -31,23 +31,23 @@ document.addEventListener("keydown", function logKey(e) {
     }
     if (key == "ArrowUp") {
         topp--;
-        beweeg.style.transform = "rotate(-90deg)";
+        car.style.transform = "rotate(-90deg)";
     }
     if (key == "ArrowDown") {
         topp++;
-        beweeg.style.transform = "rotate(-270deg)";
+        car.style.transform = "rotate(-270deg)";
     }
     if (key == "ArrowLeft") {
         left--;
-        beweeg.style.transform = "rotate(180deg)";
+        car.style.transform = "rotate(180deg)";
     }
     if (key == "ArrowRight") {
         left++;
-        beweeg.style.transform = "rotate(0deg)";
+        car.style.transform = "rotate(0deg)";
     }
     //console.log(left + " : " + topp);
-    beweeg.style.left = left + "px";
-    beweeg.style.top = topp + "px";
+    car.style.left = left + "px";
+    car.style.top = topp + "px";
 });
 // if (beweeg.location <= trees.location) {
 //   chrash();
@@ -111,23 +111,23 @@ document.addEventListener("keydown", function logKey(e) {
 var can_drive;
 function crash() {
     trees = document.getElementsByClassName("tree");
-    beweeg = document.getElementById("beweeg");
+    car = document.getElementById("car");
     var overlap = false;
     for (var index = 0; index < trees.length; index++) {
-        overlap = !(beweeg.getBoundingClientRect().right <
+        overlap = !(car.getBoundingClientRect().right <
             trees[index].getBoundingClientRect().left ||
-            beweeg.getBoundingClientRect().left >
+            car.getBoundingClientRect().left >
                 trees[index].getBoundingClientRect().right ||
-            beweeg.getBoundingClientRect().bottom <
+            car.getBoundingClientRect().bottom <
                 trees[index].getBoundingClientRect().top ||
-            beweeg.getBoundingClientRect().top >
+            car.getBoundingClientRect().top >
                 trees[index].getBoundingClientRect().bottom);
         if (overlap) {
             console.log("KOOP EEN RIJBEWIJS OFZO");
             var een = 1;
             crashcounter = +een;
             document.getElementById("crashcounter").innerHTML = crashcounter;
-            beweeg.src = "./assets/img/beweeg" + crashcounter + ".png";
+            car.src = "./assets/img/beweeg" + crashcounter + ".png";
             if (crashcounter <= 5) {
                 can_drive = false;
             }

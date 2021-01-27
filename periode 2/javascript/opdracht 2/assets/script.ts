@@ -5,10 +5,10 @@ let trees; // maakt een var voor dat je hem oproept
 let overlap = false; // als true wordt dan is de auto gechrashed
 const debug = true; // als de debug
 let snelheid: number = 100; // snelheid TODO FIX
-let beweeg = document.getElementById("beweeg");
+// let beweeg = document.getElementById("beweeg");
 let left = 100;
 let topp = 100;
-let car = document.getElementById("beweeg"); // roept de auto in html naar js
+let car = document.getElementById("car"); // roept de auto in html naar js
 let crashcounter = document.getElementById("crashcounter");
 let count: number = 0;
 
@@ -26,8 +26,8 @@ for (let index = 0; index < 10; index++) {
   // const point   = system.createPoint(10, 10);
 }
 
-beweeg.style.left = left + "px";
-beweeg.style.top = topp + "px";
+car.style.left = left + "px";
+car.style.top = topp + "px";
 
 document.addEventListener("keydown", function logKey(e) {
   var key = e.key;
@@ -36,24 +36,24 @@ document.addEventListener("keydown", function logKey(e) {
   }
   if (key == "ArrowUp") {
     topp--;
-    beweeg.style.transform = "rotate(-90deg)";
+    car.style.transform = "rotate(-90deg)";
   }
   if (key == "ArrowDown") {
     topp++;
-    beweeg.style.transform = "rotate(-270deg)";
+    car.style.transform = "rotate(-270deg)";
   }
   if (key == "ArrowLeft") {
     left--;
-    beweeg.style.transform = "rotate(180deg)";
+    car.style.transform = "rotate(180deg)";
   }
   if (key == "ArrowRight") {
     left++;
-    beweeg.style.transform = "rotate(0deg)";
+    car.style.transform = "rotate(0deg)";
   }
   //console.log(left + " : " + topp);
 
-  beweeg.style.left = left + "px";
-  beweeg.style.top = topp + "px";
+  car.style.left = left + "px";
+  car.style.top = topp + "px";
 });
 
 // if (beweeg.location <= trees.location) {
@@ -121,17 +121,17 @@ let can_drive
 
 function crash() {
   trees = document.getElementsByClassName("tree");
-   beweeg = document.getElementById("beweeg");
+   car = document.getElementById("car");
   var overlap = false;
   for (let index = 0; index < trees.length; index++) {
     overlap = !(
-      beweeg.getBoundingClientRect().right <
+      car.getBoundingClientRect().right <
         trees[index].getBoundingClientRect().left ||
-      beweeg.getBoundingClientRect().left >
+      car.getBoundingClientRect().left >
         trees[index].getBoundingClientRect().right ||
-      beweeg.getBoundingClientRect().bottom <
+      car.getBoundingClientRect().bottom <
         trees[index].getBoundingClientRect().top ||
-      beweeg.getBoundingClientRect().top >
+      car.getBoundingClientRect().top >
         trees[index].getBoundingClientRect().bottom
     );
     if (overlap) {
@@ -139,7 +139,7 @@ function crash() {
       let een = 1;
       crashcounter = + een;
       document.getElementById("crashcounter").innerHTML = crashcounter;
-      beweeg.src = "./assets/img/beweeg" + crashcounter + ".png";
+      car.src = "./assets/img/beweeg" + crashcounter + ".png";
       if (crashcounter <= 5) {
         can_drive = false;
       }
