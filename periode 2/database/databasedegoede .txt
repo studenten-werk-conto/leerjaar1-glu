@@ -20,3 +20,32 @@ c
 d
 
 opdracht 4
+
+opdracht 5
+a
+b SELECT a_dag as dagen, SUM(a_nummer) AS activiteiten FROM ‘activiteiten’ GROUP BY a_dag 
+SELECT CONCAT (voornaam,tussenvoegsel,achternaam) AS naam FROM namen
+SELECT * FROM ‘namen’
+SELECT CONCAT (voornaam,tussenvoegsel,achternaam) AS naam FROM namen
+
+
+opdracht 6
+a CREATE ALGORITH = UNDEFINED DEFINER='studenten' VIEW 'studenten' AS 
+CREATE TABLE studenten ( studentnummer INT(10) NOT NULL, voornaam VARCHAR(255) NOT NULL, tussenvoegsel VARCAHR(255) NOT NULL, achternaam VARCHAR(255), geboortedatum DATE)
+SELECT * FROM 'studenten'
+
+b INSERT INTO `studenten` (`studentnummer`, `voornaam`, `tussenvoegsel`, `achternaam`, `geboortedatum`) VALUES ('3232', 'mand', 'de', '3e', '2021-01-20'), ('32131', 'meester', 'frank', 'visser', '2020-06-17'), ('2323', 'hendrik', 'de', '17e', '2021-01-28'), ('3244', 'gio', 'moet', 'zijnbekhouden', '2021-01-01'), ('21212121', 'en', 'glonk', 'ook', '2021-09-10');
+
+c UPDATE studenten SET achternaam = "jak", geboortedatum="17/08/2000" WHERE achternaam= "kaas"
+
+d DELETE FROM studenten WHERE achternaam="visser"
+
+e SELECT * FROM 'studenten' WHERE 1
+
+f ROLLBACK
+
+
+
+opdracht 7
+a SELECT a_naam FROM inschrijvingen, activiteiten WHERE activiteiten.a_nummer = inschrijvingen.i_act
+b SELECT i_nummer, achternaam,tussenvoegsel, voornaam, a_naam FROM 'inschrijvingen','namen','activiteiten' WHERE i_nummer = namen.nummer AND i_act = activiteiten.a_nummer
