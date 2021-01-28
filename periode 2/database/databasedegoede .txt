@@ -8,21 +8,46 @@ c SELECT DISTINCT voornaam FROM `namen`
 d SELECT * FROM `activiteiten` WHERE 1 ORDER BY `a_naam` ASC 
 
 opdracht 2
-a
-b
-c
-d
+A SELECT CONCAT(voornaam, tussenvoegsel, achternaam) AS Naam FROM `namen`
+
+B SELECT CONCAT(voornaam, ' ', tussenvoegsel, ' ', achternaam) AS naamzonderspaties FROM `namen`
+
+C SELECT CONCAT(voornaam, IF(tussenvoegsel="",""," "), tussenvoegsel, " ", Achternaam) AS naamzonderspatie FROM `namen`
+
+D SELECT UPPER(a_naam) FROM `activiteiten`
+
+E SELECT a_beschrijving FROM activiteiten WHERE a_beschrijving like "%allerlei%"
 
 odpracht 3
-a
-b
-c
-d
+A. SELECT a_nummer, a_naam, (a_kosten) AS 'kosten incl BTW', (a_kosten/1.21) AS 'kosten excl BTW' from `activiteiten`
+
+B. SELECT ROUND(a_kosten, 2) FROM `activiteiten` WHERE 1
+
+C. SELECT MAX(aantal) AS "MAX opkomst" FROM `opkomst`
+
+D. SELECT FLOOR(RAND()*(100-0))
+
+E. a.  SELECT 10 MOD 3
+     b. SELECT 13 MOD 3
+     c. SELECT 324 MOD 3
+     d. SELECT 777 MOD 3
+
 
 opdracht 4
+A. 1. SELECT a_begindatum, a_einddatum FROM activiteiten
+     2. SELECT date_format (a_begindatum, '%d-%m-%Y') AS begindatum, date_format (a_einddatum, '%d-%m-%Y') AS einddatum from `activiteiten`
+
+B. SELECT DATEDIFF(a_einddatum, a_begindatum) AS verschil_in_dagen FROM `activiteiten`
+
+C. SELECT DATEDIFF(NOW(), "2004-02-23") AS dagen_op_aarde
+
+D. 1. SELECT DATEDIFF("2021-12-25", NOW()) AS aantal_dagen
+    2. SELECT DATEDIFF("2021-12-25", NOW()) * 1440 AS aantal_minuten
+
+E. SELECT DISTI
 
 opdracht 5
-a
+A. SELECT a_dag AS day, COUNT(*) AS activiteiten FROM `activiteiten` GROUP BY day ORDER BY `activiteiten`  DESC
 b SELECT a_dag as dagen, SUM(a_nummer) AS activiteiten FROM ‘activiteiten’ GROUP BY a_dag 
 SELECT CONCAT (voornaam,tussenvoegsel,achternaam) AS naam FROM namen
 SELECT * FROM ‘namen’
