@@ -1,3 +1,5 @@
 [submodule "GLU-fullstack-example"]
 	path = GLU-fullstack-example
 	url = https://github.com/martijnkunstman/GLU-fullstack-example.git
+[submodule "periode 2/python/django"]
+	url = https://gitlab.glu.nl/200532/eigenrepo/-/tree/master/
