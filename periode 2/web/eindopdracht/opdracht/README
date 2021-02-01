@@ -27,10 +27,10 @@ Laat deze ook zien aan de docent.
 Binnen de pagina’s zijn de volgende vereisten:
 
     Webshopoverzicht pagina
-       [] Navigatiebalk met logo
-       [] Producten overzicht met minimaal 20 producten
-       [] Sidebar met categorieën overzicht
-       [] Footer met copyright
+       [x] Navigatiebalk met logo
+       [x] Producten overzicht met minimaal 20 producten
+       [TODO] Sidebar met categorieën overzicht
+       [x] Footer met copyright
 
  
 

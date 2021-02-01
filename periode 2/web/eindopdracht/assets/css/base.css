@@ -51,22 +51,3 @@
 /* einde base start kaarten
 als je de base kaart groote aanpast moet je ook kaartboven en kaartonder de hoogte aanpassen 
 */
-.kaart {
-  height: 350px;
-  width: 250px;
-  /* background-color: #01A7C2; */
-  display: inline-block;
-  margin: 4px;
-}
-.bovenkaart {
-  height: 175px;
-  width: 250px;
-  background-color: aqua;
-  text-align: center;
-}
-.onderkaart {
-  height: 175px;
-  width: 250px;
-  background-color: #01a7c2;
-  text-align: center;
-}
