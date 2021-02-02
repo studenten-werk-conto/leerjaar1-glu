@@ -1,0 +1,3 @@
+[submodule "GLU-fullstack-example"]
+	path = GLU-fullstack-example
+	url = https://github.com/martijnkunstman/GLU-fullstack-example.git
