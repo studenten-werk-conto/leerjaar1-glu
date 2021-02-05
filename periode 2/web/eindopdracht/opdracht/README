@@ -29,7 +29,7 @@ Binnen de pagina’s zijn de volgende vereisten:
     Webshopoverzicht pagina
        [x] Navigatiebalk met logo
        [x] Producten overzicht met minimaal 20 producten
-       [TODO] Sidebar met categorieën overzicht
+       [x] Sidebar met categorieën overzicht
        [x] Footer met copyright
 
  
@@ -37,10 +37,10 @@ Binnen de pagina’s zijn de volgende vereisten:
     Productdetail pagina
         []Navigatiebalk
         []Grote foto van het product
-        []3 kleine foto’s van het product
+        [x]3 kleine foto’s van het product
         []Informatie over het product
         []Bestelknop
-        []Footer met copyright
+        [x]Footer met copyright
 
  
 
@@ -68,9 +68,9 @@ De minimale vereisten van deze pagina zijn:
 
 Deze producten moeten allemaal klikbaar zijn, en naar een product-detail pagina gaan
 
-    []Sidebar met categorieën overzicht
+    [x]Sidebar met categorieën overzicht
 
-[]De linkjes in de sidebar mogen nep-linkjes zijn (hoeven dus niet te linken)
+[x]De linkjes in de sidebar mogen nep-linkjes zijn (hoeven dus niet te linken)
 
     []Footer met copyright
 

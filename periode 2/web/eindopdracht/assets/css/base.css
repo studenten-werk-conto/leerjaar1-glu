@@ -36,8 +36,8 @@
 }
 .sidebar_knop{
   background-color: hotpink;
-  height:35%;
-  width: 40%;
+  min-height:35%;
+  min-width: 40%;
   text-align: center;
   margin-top: 20px;
   margin: auto;

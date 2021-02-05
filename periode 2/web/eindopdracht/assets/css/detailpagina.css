@@ -1,5 +1,18 @@
+#details{
+    background-color: #445555;
+    /* width: 50%;
+    float: left; */
+    height: 690px;
+}
 #detailpagina_foto{
     background-color: aqua;
-    height: 20%;
+    height: 350px;
     width: 20%;
+}
+#detailpaginatext{
+    float: right;
+    background-color: blanchedalmond;
+    min-height: 300px;
+    width: 60%;
+
 }

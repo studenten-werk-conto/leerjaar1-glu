@@ -11,8 +11,8 @@ let formulieren_pagina = document.getElementById("formulier");
 function showform(){
     console.log("form wordt nu getoont");
     formulieren_pagina.style.display = "block";
-    produceten_pagina.style.display = "block";
-    detail_pagina.style.display = "block";
+    produceten_pagina.style.display = "none";
+    detail_pagina.style.display = "none";
 }
 
 function showproducten(){
