@@ -45,13 +45,13 @@ Binnen de pagina’s zijn de volgende vereisten:
  
 
     Bestelpagina
-        []Formulier met tenminste de velden:
-            []voornaam, tussenvoegsel, achternaam
-            []straat, huisnummer
-            []postcode, woonplaats
-            []telefoonnummer
-            []e-mailadres
-            []rekeningnummer
+        [X]Formulier met tenminste de velden:
+            [X]voornaam, tussenvoegsel, achternaam
+            [X]straat, huisnummer
+            [X]postcode, woonplaats
+            [X]telefoonnummer
+            [X]e-mailadres
+            [X]rekeningnummer
 
  
 

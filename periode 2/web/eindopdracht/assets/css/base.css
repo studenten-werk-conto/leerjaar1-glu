@@ -1,0 +1,80 @@
+/* https://coolors.co/f7fff7-344966-cc5a71-6ca6c1-01a7c2 */
+/* @font-face {
+  font-family: Graphik;
+  src: url(Graphik-Semibold-Web.woff2);
+}
+*/
+*{
+  /* font-family: Graphik; */
+  /* background-color: aqua;  */
+  margin: 0px;
+}
+/* #container {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+  grid-template-rows: 150px 150px;
+  grid-gap: 1rem;
+} */
+#header {
+  background-color: #6ca6c1;
+  height: 75px;
+  width: 100%;
+  /* grid-row-start: 1;
+  grid-row-end: 6;
+  grid-row: 9 span; */
+  border: #25535a 2px;
+  border-style: solid;
+}
+#sidebar {
+  display: grid;
+  background-color: #344966;
+  float: left;
+  width: 9%;
+  height: 690px;
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+}
+.sidebar_knop{
+  background-color: hotpink;
+  height:35%;
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  margin: auto;
+  border: black 2px;
+  border-style: solid;
+  border-radius: 5px;
+}
+ #content{
+  background-color: #f7fff7;
+  float: right;
+  width: 91%;
+  min-height: 900px;
+}
+.knop_header {
+  min-height: 20px;
+  min-width: 40px;
+  margin-right: 5px;
+  margin-top: 7px;
+  background-color: white;
+  display: inline-block;
+  float: right;
+}
+.knop_header.div {
+  text-align: center;
+  background-color: brown;
+}
+#logo {
+  font-family: "Comfortaa", cursive;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -0.116em;
+  font-weight: 900;
+  font-style: normal;
+  margin-top: 2px;
+  margin-left: 10px;
+} 
+
+/* einde base start kaarten
+als je de base kaart groote aanpast moet je ook kaartboven en kaartonder de hoogte aanpassen 
+*/
