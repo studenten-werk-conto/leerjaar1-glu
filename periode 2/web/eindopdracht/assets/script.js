@@ -28,5 +28,3 @@ function showdetails(){
     detail_pagina.style.display = "block"
 
 }
-showdetails(); 
-//TODO REMOVE
