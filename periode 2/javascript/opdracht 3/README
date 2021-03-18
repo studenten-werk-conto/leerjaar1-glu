@@ -1,7 +1,0 @@
-   [X]Voeg aan het JSON bestand youtube videos toe zodat hier minimaal 5 videos in staan.
-   [] Voeg functionaliteit toe waarmee het iframe element in eerste instantie niet in beeld is, maar pas bij een druk op de 'Speel volgende video' in beeld komt te staan (tip: gebruik hiervoor css display: none op het iframe)
-   [] Voeg functionaliteit toe die de title, artist, en year uit het JSON bestand leest, en op het scherm toont onder de video
-   [] Voeg een afspeellijst toe, waarmee je door op een titel te klikken handmatig naar bijvoorbeeld de 5e video kunt zappen
-   [] Voeg een vorige-button toe waarmee je naar de vorige video kunt zappen
-   [] Voeg styling toe, zodat het lijkt alsof de videos ook echt op een televisie worden afgespeeld.
-   [X]tip: bouw om de iframe heen een div'je met background-image.

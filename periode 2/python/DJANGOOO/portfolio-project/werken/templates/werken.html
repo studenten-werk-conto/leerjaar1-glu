@@ -1,5 +1,0 @@
-{% extends 'index.html' %}
-{% block content %}
-{% load static %
-    {% for werken in werken.all %}
-  <img class="database_img" alt="{{ werken.title }}" src="{{ werken.image.url }}" />
