@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap");
+
+html,
+body {
+  height: 100%;
+  background-color: #aaaaaa;
+  font-family: 'Potta One', cursive;
+  /*font-family: "Hachi Maru Pop", cursive;*/
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  border: 2px solid black;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  background-color: white;
+}
+#score {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 3vh;
+  line-height: 6vh;
+  vertical-align: middle;
+  display: inline-block;
+}
+#scoreCounter {
+  font-size: 6vh;
+  line-height: 6vh;
+  vertical-align: top;
+  display: inline-block;
+}
+#info {
+  display:flex;
+  width: 76vmin;
+  justify-content: space-between;
+  flex-direction: row;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 3vh;
+  line-height: 5vh;
+  vertical-align: middle;
+}
+#timeCounter, #speedCounter{
+  font-size: 5vh;
+  line-height: 5vh;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+}
+#timeCounter{margin-right: 5vh}
+
+
+#info {
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  font-size: 3vh;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+.cell {
+  border: 1px solid #cccccc;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  line-height: 0;
+  box-sizing: border-box;
+  /*transition: all 1.2s;*/
+}
+.break {
+  height: 0px;
+  width: 0px;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  display: block;
+}
+.snake {
+  background-color: red;
+  border: 1px solid red;
+  /*transition: all 0s;*/
+}
+
+.snake.cornerTopLeft{
+  border-top-left-radius: 100%; 
+}
+.snake.cornerTopRight{
+  border-top-right-radius: 100%; 
+}
+.snake.cornerBottomLeft{
+  border-bottom-left-radius: 100%; 
+}
+.snake.cornerBottomRight{
+  border-bottom-right-radius: 100%; 
+}
+.snake.endTop{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%; 
+  
+}
+.snake.endBottom{
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;  
+}
+.snake.endLeft{
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;  
+}
+.snake.endRight{
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;  
+}
+.snake.single{
+  border-radius: 50%;
+}
+
+
+.food {
+  position: relative;
+  /*background-color: blue !important;  */
+  /*transition: all 0s;*/
+}
+.food::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: 50%;
+  background-color: blue;
+  box-sizing: border-box;
+}
+.mobileControls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.mobileControls svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.mobileControls polygon {
+  pointer-events: auto;
+  fill: rgba(0, 0, 0, 0);
+}
+/*
+#up:hover,
+#down:hover,
+#left:hover,
+#right:hover {
+  fill: rgba(0, 0, 0, 0.5);
+}
+*/

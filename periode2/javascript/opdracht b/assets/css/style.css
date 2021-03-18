@@ -1,0 +1,16 @@
+body {
+background-color: wheat;
+    font-family: Arial;
+}
+.logo {
+    width: 100px;
+}
+ul {
+    padding:0;
+}
+
+ul li {
+    padding: 20px;
+    border: 1px solid #000;
+    list-style: none;
+}

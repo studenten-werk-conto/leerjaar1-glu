@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    margin: 10px;
+}
+
+.border {
+    border: 10px solid #ff0000;
+}

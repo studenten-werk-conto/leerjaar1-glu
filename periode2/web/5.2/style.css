@@ -1,0 +1,252 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+i{
+    color: #3061AB;
+}
+
+.header{
+    height: 100px;
+    width: 1510px;
+    background-color: #31B1F0;
+    overflow:hidden;
+    
+}
+
+.logo{
+    height: 200px;
+    margin-top: -50px;
+}
+
+.title{
+    margin-top: 25px;
+    margin-left: 30%;
+    margin-bottom: 25px;
+}
+
+.titlebig{
+    font-size: 20px;
+    font-weight: bold;
+    color: #3061AB;
+    margin-bottom: 0;
+}
+
+.dot{
+    font-size: 30px;
+    color: #FE7B32;
+    margin-top: -32px;
+    margin-left: 145px;
+    margin-bottom: 0;
+}
+
+.titlesmall{
+    color: #53B3EB;
+    font-weight: bold;
+}
+
+.factuurtitle{
+    margin-left: 30%;
+    text-align: right;
+    float: left;
+}
+
+.pbestelling{
+    margin-top: 6px;
+}
+.paanhef{
+    margin-top: 1px;
+    margin-bottom: 0;
+}
+.pnaam{
+    margin-top: 18px;
+}
+.pcode{
+    margin-top: 1px;
+}
+.phuis{
+    margin-bottom: 0;
+}
+.pland{
+    margin-top: 32px;
+}
+.paflever{
+    margin-bottom: 0;
+}
+.pmail{
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+.ptele{
+    margin-bottom: 0;
+}
+.pdate{
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.pverzend{
+    margin-top: 14px;
+}
+.pnieuws{
+    margin-bottom: 0;
+}
+.pkleur{
+    margin-top: 67px;
+}
+
+.factuurinput{
+    margin-left: 10px;
+    float: left;
+    line-height: 35px;
+}
+
+.landnl{
+    margin-bottom: 0;
+}
+
+.landbe{
+    margin-top: -35px;
+    margin-left: 73px;
+    color: #31B1F0;
+    margin-bottom: -31px;
+}
+
+.ja{
+    margin-bottom: 0;
+}
+.bon{
+    margin-top: -35px;
+    margin-left: 300px;
+    margin-bottom: 0;
+    color: #FE7B32;
+    font-weight: bold;
+}
+.voor{
+    margin-top: -35px;
+    margin-left: 420px;
+    margin-bottom: 0;
+}
+.jalijn{
+    margin-top: -50px;
+    margin-bottom: 0;
+}
+
+.color{
+    margin-bottom: -20;
+    width: 200px;
+}
+
+.title2{
+    margin-top: 600px;
+    margin-left: 30%;
+}
+.dot2{
+    font-size: 30px;
+    color: #FE7B32;
+    margin-top: -32px;
+    margin-left: 240px;
+    margin-bottom: 0;
+}
+.ww2{
+    margin-top: 105px;
+}
+.inww{
+    margin-top: 14px;
+}
+.wwlijn{
+    margin-bottom: 0;
+}
+.wwlijn2{
+    margin-top: -9px;
+}
+
+.verder{
+    background-color: rgba(128, 128, 128, 0.548);
+    margin-left: 25%;
+    height: 50px;
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.button{
+    background-color: rgb(17, 182, 17);
+    color: white;
+    margin-right: 10px;
+    margin-top: 5px;
+    text-align: center;
+    height: 40px;
+    width: 100px;
+    float: right;
+    border-radius: 5px;
+    border: green solid 1px;
+}
+.verd{
+    margin-bottom: 0;
+    margin-top: 13px;
+}
+
+.footer {
+    background-color: #0090E3;
+    width: 100%;
+    padding-bottom: 92px;
+    font-family: arial;
+    clear: both;
+}
+
+.footer-left {
+    padding: 20px;
+    margin-left: 200px;
+    clear: both;
+}
+
+.phone-footer {
+    float: left;
+    font-size: 50px;
+    margin: 2px;
+}
+
+.footer-right {
+    float: right;
+    background-color: #0090E3;
+    margin-top: -275px;
+    margin-right: 200px;
+}
+
+.footer-right p {
+    padding: 4px;
+}
+
+.footer-2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.logos img{
+    width: 3;
+    text-align: center;
+    max-height: 70px;
+}
+.white {
+    color: #ffff
+}
+
+.orange {
+    color: #FF6600;
+}
+
+.lighterblue {
+    color: #CCE9F7;
+}
+
+.lightblue {
+     color: #0091E4;
+}
+
+.blue {
+    color: #285DAB;
+}
+.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,12 @@
+client side aan de kant van de website bezoeker 
+server side aan de kant van de server bijv aws
+localhost als je een server bouwt op je eigen pc en ook bezoekt op je eigen pc
+variable "wij"
+constanten altijd dat leerlingen bijv 23 in een klas zitten
+naamgeving?
+operators commandos zoals funcion loop
+print een string naar de terminal sturemn
+if else een wacht ding
+include requiere? 
+get post iets met formulieren versturen
+coockie data lokaal client side opslaan

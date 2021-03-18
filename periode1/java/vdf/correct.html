@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="correct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Afleveradres</h2>
+        </div>
+        <form id="form" class="form" action="result.html" method="GET">
+            <div class="form-control">
+                <label for="aanhef">Aanhef*</label>
+                <select id="aanhef" name="aanhef">
+                    <option value="">Aanhef</option>
+                    <option value="dhr" >Dhr.</option>
+                    <option value="mvr" >Mvr.</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="voornaam">Voornaam*</label>
+                <input type="text" placeholder="John" id="voornaam"/>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="achternaam">Achternaam*</label>
+                <input type="text" placeholder="Doe" id="achternaam"/>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="straat">Straatnaam*</label>
+                <input type="text" placeholder="Straatweg" id="straat" />
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="nummer">Huisnummer*</label>
+                <input type="number" placeholder="5" id="nummer">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="bedrijf">Bedrijf</label>
+                <input type="text" id="bedrijf">
+            </div>
+
+            <div class="form-control">
+                <label for="post">Postcode*</label>
+                <input type="text" id="post" placeholder="1234AB" pattern="[0-9]{4}[A-Z]{2}">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="plaats">Plaats*</label>
+                <input type="text" id="plaats" placeholder="Utrecht">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="land">Land*</label>
+                <select id="land">
+                    <option value="">Land</option>
+                    <option value="NL" >Nederland</option>
+                    <option value="DL" >Deutschland</option>
+                    <option value="UK" >United Kingdom</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="email">Email*</label>
+                <input type="email" placeholder="johndoe.1234@gmail.com" id="email" />
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="telenum">Telefoon nummer*</label>
+                <input type="tel" placeholder="06 12345678" id="telenum" pattern="[0-9]{2} [0-9]{8}"/>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="agv">Gaat u akkoord met de algemene voorwaarden?</label>
+                <select id="agv">
+                    <option value="">Nee</option>
+                    <option value="ja">Ja</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <hr class="line">
+
+            <div class="vraag">
+                <label for="vraag">Heeft u een ander factuur adres?</label>
+                <select id="vraag">
+                    <option value="nee">Nee (dan kopieëren wij de bovenstaande gegevens voor u)</option>
+                    <option value="ja">Ja (dan moet u het onderstaande invullen)</option>
+                </select>
+            </div>
+
+            <hr class="line">
+
+            <div class="form-control">
+                <label for="aanhef">Aanhef*</label>
+                <select id="aanhef2">
+                    <option value="">Aanhef</option>
+                    <option value="dhr" >Dhr.</option>
+                    <option value="mvr" >Mvr.</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="voornaam">Voornaam*</label>
+                <input type="text" placeholder="John" id="voornaam2" />
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="achternaam">Achternaam*</label>
+                <input type="text" placeholder="Doe" id="achternaam2"/>
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="straat">Straatnaam*</label>
+                <input type="text" placeholder="Straatweg" id="straat2" />
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="nummer">Huisnummer*</label>
+                <input type="number" placeholder="5" id="nummer2">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="bedrijf">Bedrijf</label>
+                <input type="text" id="bedrijf">
+            </div>
+
+            <div class="form-control">
+                <label for="post">Postcode*</label>
+                <input type="text" id="post2" placeholder="1234AB" pattern="[0-9]{4}[A-Z]{2}">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="plaats2">Plaats*</label>
+                <input type="text" id="plaats2" placeholder="Utrecht">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="land">Land*</label>
+                <select id="land2">
+                    <option value="">Land</option>
+                    <option value="NL" >Nederland</option>
+                    <option value="DL" >Deutschland</option>
+                    <option value="UK" >United Kingdom</option>
+                </select>
+                <small>Error message</small>
+            </div>
+
+            <button type="submit" onclick="next()">Submit</button>
+            <div id="OverZicht">
+                <header>Overzicht</header>
+                <hr>
+                <div id ="InfoList">
+                nothing here yet.
+                </div>
+                <hr>
+                <div id ="InfoList2">
+                    nothing here yet [ander fractuuradress].
+
+            </div>
+            </div>
+        </form>
+    </div>
+    <script src="correct.js"></script>
+   
+</body>
+</html>
