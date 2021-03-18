@@ -1,7 +1,15 @@
 /* global stuff */
+@font-face {
+  font-family: code;
+  src: local(code);
+}
 * {
   margin: 0px;
+  font-family: code;
 }
+
+
+
 
 /* header stuff */
 header {
@@ -27,20 +35,53 @@ nav menu li {
 nav menu a {
   text-decoration: none;
 }
+
+
+
+
 /* content shit  */
-#articles{
-  width: 70%;
-  /* display: inline; */
+
+#articles{ /* here are all the articles that need to be on the left side of the page*/
+  width: 65%;
+  background-color: bisque;
+  float: left;
+  margin: 4%;
 }
-.bigarticle {
+/*for the big article on the top of thre page*/
+.bigarticles{
+  height: 300px;
+  width: 80%;
+display: inline;
+
+  background-color: black;
+}
+#toparticles{
+  
+}
+
+.blackline{ /* the black box in between catogories */
+  width: 69%;
+  height: 40px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*medium size article styling */
+.mediumarticles {
   border: black 1px;
   border-style: dashed;
   display: inline-flex;
   text-align: left;
+  background-color: aquamarine;
 }
-.bigarticle b {
+.mediumarticles b {
   margin-top: 20px;
   margin-left: 20px;
+}
+.smallarticles img {
+  display: inline;
 }
 
 /* aside shit */
@@ -48,12 +89,13 @@ aside{
   display: block;
   border: black 1px;
   border-style: solid;
-  /* float: right;   */
-  width: 10%;
-  margin-right: 0px;
-  position: absolute;
-  text-align: right;
+  width: 26%;
+  float: right;
+  background-color: aqua;
 }
+ 
+
+
 
 /* footer troep*/
 footer nav div {

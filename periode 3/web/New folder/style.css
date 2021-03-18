@@ -1,0 +1,19 @@
+#container{
+    margin-left: 50%;
+}
+.button{
+    height: 50px;
+    width: 30%;
+    text-align: center;
+    background-color: gray;
+    border: 1px black;
+    border-style: dashed;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    /* border: 1px black;
+    border-style: dashed; */
+    display: inline-block;
+}
