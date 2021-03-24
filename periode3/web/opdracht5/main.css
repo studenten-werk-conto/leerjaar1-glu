@@ -1,0 +1,46 @@
+/* <header></header>
+<main></main>
+
+<aside>
+<article></article>
+<article></article>
+<article></article>
+</aside>
+<footer></footer> */
+* {
+  margin: 0px;
+  border: 1px black;
+  border-style: dashed;
+  text-align: center;
+}
+header {
+  height: 400px;
+  width: 100%;
+  background-color: aqua;
+}
+
+main {
+  height: 400px;
+  width: 68%;
+  background-color: green;
+}
+
+aside {
+  height: 600px;
+  width: 25%;
+  background-color: rebeccapurple;
+  float: right;
+}
+
+article {
+  height: 400px;
+  width: 56%;
+  background-color: darkorange;
+}
+
+footer {
+  height: 400px;
+  width: 100%;
+  background-color: hotpink;
+  display: flex;
+}
