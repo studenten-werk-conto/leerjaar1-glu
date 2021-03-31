@@ -1,0 +1,24 @@
+img{
+    height: 300px;
+    width: auto;
+    position: absolute;
+}
+
+video{
+    height: 162px;
+    width: 275px;
+
+    margin-top: 57px;
+    margin-left: 92px;
+
+    position: relative;
+}
+#button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: green;
+    position: relative;
+    margin-left: 369px;
+    margin-top: -11px;
+}

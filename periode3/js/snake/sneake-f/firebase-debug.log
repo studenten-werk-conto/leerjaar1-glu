@@ -1,0 +1,32 @@
+[debug] [2021-03-23T13:23:02.467Z] ----------------------------------------------------------------------
+[debug] [2021-03-23T13:23:02.469Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2021-03-23T13:23:02.469Z] CLI Version:   9.6.1
+[debug] [2021-03-23T13:23:02.469Z] Platform:      linux
+[debug] [2021-03-23T13:23:02.469Z] Node Version:  v10.19.0
+[debug] [2021-03-23T13:23:02.469Z] Time:          Tue Mar 23 2021 14:23:02 GMT+0100 (Central European Standard Time)
+[debug] [2021-03-23T13:23:02.469Z] ----------------------------------------------------------------------
+[debug] [2021-03-23T13:23:02.469Z] 
+[debug] [2021-03-23T13:23:02.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-23T13:23:02.475Z] > authorizing via signed-in user
+[debug] [2021-03-23T13:23:02.475Z] [iam] checking project sneake for permissions ["firebase.projects.get"]
+[debug] [2021-03-23T13:23:02.477Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-23T13:23:02.477Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-23T13:23:02.579Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Tue, 23 Mar 2021 13:23:02 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-23T13:23:02.595Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sneake:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-03-23T13:23:03.216Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 23 Mar 2021 13:23:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=579","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-23T13:23:03.220Z] > refreshing access token with scopes: []
+[debug] [2021-03-23T13:23:03.221Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-23T13:23:03.290Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 23 Mar 2021 13:23:03 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-23T13:23:03.305Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sneake [none]
+[debug] [2021-03-23T13:23:03.593Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sneake 200
+[debug] [2021-03-23T13:23:03.593Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sneake {"projectId":"sneake","projectNumber":"139950715463","displayName":"sneake","name":"projects/sneake","resources":{"hostingSite":"sneake","realtimeDatabaseInstance":"sneake-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Serving from '/home/constantijn/leerjaar1-glu/periode3/js/snake/sneake-f'...
+[info] 
+[debug] [2021-03-23T13:23:03.596Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sneake/webApps/-/config [none]
+[debug] [2021-03-23T13:23:04.506Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sneake/webApps/-/config 200
+[debug] [2021-03-23T13:23:04.506Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sneake/webApps/-/config {"projectId":"sneake","databaseURL":"https://sneake-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"sneake.appspot.com","apiKey":"AIzaSyDtOe9uOnk0jqadkIiCl6HOUAidYtiK804","authDomain":"sneake.firebaseapp.com","messagingSenderId":"139950715463"}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
