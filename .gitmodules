@@ -3,3 +3,12 @@
 	url = https://github.com/martijnkunstman/GLU-fullstack-example.git
 [submodule "periode 3/moblile web development/skrot"]
 	url = https://github.com/cvanh/skrot
+[submodule "snek"]
+	path = snek
+	url = https://github.com/cvanh/snek
+[submodule "periode3/js/snake2.0"]
+	path = periode3/js/snake2.0
+	url = https://github.com/cvanh/snek
+[submodule "periode3/js/webdev-pong2021"]
+	path = periode3/js/webdev-pong2021
+	url = https://github.com/cvanh/ponggg
