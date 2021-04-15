@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,33 @@
     <title>opdracht6</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
     <header>header</header>
-    <nav>
-        <a class="navbutton"><div ></div>link</div></a>
-        <a class="navbutton"><div >link</div></a>
-        <a class="navbutton"><div >link</div></a>
-    </nav>
-    <article>artikel</article>
+    <main>
+        <nav>
+            <a>
+                <div class="navbutton">link</div>
+            </a>
+            <a>
+                <div class="navbutton">link</div>
+            </a>
+            <a>
+                <div class="navbutton">link</div>
+            </a>
+        </nav>
+        <article>artikel</article>
+    </main>
+
     <footer>&#169 imaretarded.dev software</footer>
 </body>
+<script>
+    window.onresize = function() {
+        let article = document.getElementsByTagName('article')[0].offsetHeight;
+
+	 document.getElementsByTagName('nav')[0].style.height = article + 'px';
+	    if(window.innerwidth >= 500)
+    }
+</script>
+
 </html>

@@ -1,52 +1,65 @@
 /*
     <header>header</header>
+    <main
     <nav>
         <a><div class="navbutton">link</div></a>
         <a><div class="navbutton">link</div></a>
         <a><div class="navbutton">link</div></a>
     </nav>
+    </main>
     <article>artikel</article>
     <footer></footer>
 
     */
-*{
-    margin: 0px;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+* {
+  margin: 0px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 header {
-    height: 90px;
+  height: 90px;
   width: 100%;
   background-color: blue;
+
   border: 1px black;
   border-style: dashed;
 }
 nav {
-  height: 300px;
+  height: 340px;
   width: 19%;
-  display: inline-block;
+  /* display: inline-block; */
+
   border: 1px black;
   border-style: dashed;
+  margin-right: 0px;
 }
 .navbutton {
-    display: inline;
+  display: inline-block;
+
   border: 1px black;
   border-style: dashed;
-  display: inline-block;
 }
 article {
-    width: 61%;
-    height: 300px;
-    display: inline-block;
+  width: 81%;
+  height: 300px;
+  /* display: inline-block; */
+  padding: 20px;
+
   border: 1px black;
   border-style: dashed;
+  margin-left: 0px;
 }
 footer {
   width: 100%;
   height: 90px;
   background-color: blue;
+
   border: 1px black;
   border-style: dashed;
   text-align: center;
+}
+main{
+  display: inline-flex;
+  min-width: 100%;
 }
