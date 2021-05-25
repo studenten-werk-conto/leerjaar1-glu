@@ -1,0 +1,47 @@
+*{
+   margin: 0;
+}
+body{
+   width: 100%;
+
+}
+.verborgen{
+   display: none;
+}
+.menuknop{
+   
+}
+.bigcard{
+   height: 200px;
+   width: 15%;
+   /* background-color: red; */
+   border: 1px;
+   border: hsl(0, 3%, 53%);
+   border-radius: 5px;
+   border-style: solid;
+}
+header{
+   width: 100%;
+   background-color: hsl(125, 17%, 46%);
+}
+#menu{
+   background-color: green;
+   width: 20%;
+  ;
+}
+#menu ul li{
+   background-color: bisque;
+}
+
+#menuknop{
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-left: auto;
+ }
+ main{
+   margin-top: 1px;
+ }
+ @media screen and (max-width:680px) {
+    
+   }

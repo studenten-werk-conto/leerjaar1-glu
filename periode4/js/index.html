@@ -5,38 +5,57 @@
 </head>
 
 <body>
+    
+
     <script>
         // 1
         const myName = 'constantijn';
         //2 
-        const myAge = 16; const myHairColor = 'brown';
+        const myAge = 16;
+        const myHairColor = 'brown';
         //3 
-        const leeg; 
+        var leeg; //FIXME botched 
         //4
         const zeven_7 = 7; // variable kunnen niet met een getal beginnen
         //5 
         leeg = null;
         //8
-        const myBirthyear = 2004;
+        const myBirthyear = new Date().getFullYear() / myAge;
 
-        document.write('uitkomst vraag 8.1 is: '+ myAge);
-        document.write('uitkomst vraag 8.2 is: '+ Math.round(myAge * myBirthyear));
-        document.write('uitkomst vraag 8.3 is: '+ myAge);
-        document.write('uitkomst vraag 8.4 is: '+ myAge);
-        document.write('uitkomst vraag 8.5 is: '+ myAge);
-        document.write('uitkomst vraag 8.6 is: '+ myAge);
-        document.write('uitkomst vraag 8.7 is: '+ myAge);
-        document.write('uitkomst vraag 8.8 is: '+ myAge);
-        document.write('uitkomst vraag 8.9 is: '+ myAge);
-        document.write('uitkomst vraag 8.10 is: '+ myAge);
-        document.write('uitkomst vraag 8.11 is: '+ myAge);
-        document.write('uitkomst vraag 8.12 is: '+ myAge);
-        document.write('uitkomst vraag 8.13 is: '+ myAge);
+        const antwoord = 
+        [
+        myAge * 1, //1
+        myAge * myBirthyear, //2 
+        Math.round(myAge * myBirthyear), //3 
+        myBirthyear / myAge, //3
+        Math.max(myBirthyear / myAge,myAge / myBirthyear),// 4
+        Math.round(myBirthyear / myAge), //5 
+        2.5 * 2.5, //6
+        Math.PI * 2, //7
+        12 / 0, // 8
+        myName * 2, // 9
+        myAge * 2, // 10
+        myAge * (2 + 1), //11
+        myAge + 1, //12
+        leeg * 1 //13 
+        ] 
 
-        
+        for (let i = 0; i < antwoord.length; i++) {
+            let j = i + 1; //botched
+            document.write('antwoord 8.'+ j +' is: ' + antwoord[i] );
+            document.write('<br>')
+        }
 
-        
+        let myArray = [1,2,3,4,5,6,7,8,9,10];
+        myArray.push(11);
+        myArray.reverse();
+        myArray.pop();
+        document.write(myArray);
+        myArray.splice(1,11,6);
+        document.write('<br>')
+        document.write(myArray);
 
+        const myArrayLength = myArray.length;
 
     </script>
 </body>

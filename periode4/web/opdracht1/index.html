@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>opdracht 1</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <svg class="menuknop" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 5.75H19.25"/>
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 18.25H19.25"/>
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.75 12H19.25"/>
+    </svg>
+    <ul id="menu" class="verborgen">
+      
+      <li><a href="./product">Salades</a></li>
+    </ul>
+  </header>
+ <main>
+  <a href="#"><div class="bigcard menuknop">text</div></a>
+ </main>
+
+
+
+
+
+  <script>
+      const buttons = document.getElementsByClassName('menuknop') //alle knoppen die de class verborgen getoggled moetenw orden moeten de class waarde menuknop krijgen
+      const menu = document.getElementById('menu')
+
+      Array.from(buttons).forEach(function(buttons) {
+      buttons.addEventListener('click', () =>{
+        console.log(buttons)
+        menu.classList.toggle('verborgen')
+      });
+    });
+    </script>
+
+</body>
+
+</html>

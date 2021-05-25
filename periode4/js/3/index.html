@@ -1,0 +1,73 @@
+<img id='foto' class='fotos' src='nachtwacht.jpg' height="100px" width="100px">
+
+<div id="root">
+    <p>de nachtwacht</p>
+</div>
+<a onclick="functie1()">verander foto</a>
+<br>
+<a onclick="functie2()">maak een div met text aan</a>
+<br>
+<a onclick="functie3()">maak achtergrond pink</a>
+<br>
+<a onclick="functie4()">hoeveel elementen zitten op de pagina?</a>
+<br>
+<a onclick="functie5()">press me </a>
+<br>
+<a onclick="functie6()">verander foto</a>
+<br>
+
+<script>/*getElementByIdx
+createElementx
+stylex
+appendChildx
+childNodes
+innerHTMLx
+setInterval
+Daarnaast
+document.write
+srcx
+getbytagnamex
+*/
+let aantal = 0
+    function functie1() {
+        const foto = document.getElementsByTagName('img')
+        console.log(foto)
+        for (let index = 0; index < foto.length; index++) {
+            foto[index].src = './portrait.jpg';  
+        }
+        
+    }
+    function functie2() {
+        const div = document.createElement("div");
+
+        const content = document.createTextNode("aaaa");
+
+        div.appendChild(content);
+
+        const div1 = document.getElementById("div1");
+        document.body.insertBefore(div, div1);
+    }
+    function functie3() {
+        document.body.style.backgroundColor = 'pink'
+    }
+    function functie4() {
+        const body = document.getElementsByName('body')
+        console.log(body.childNodes)
+    }
+    function functie5() {
+        aantal += 1
+        const root = document.getElementById('root')
+        root.innerHTML = 'optie 5 is al keer aangelikt:' + aantal
+        console.log(aantal)
+
+    }
+    function functie6() {
+        document.write('dit was alles')
+    }
+    setInterval(() => {
+        document.body.style.backgroundColor = Math.floor(Math.random()*16777215).toString(16);
+    }, 1000);
+
+    const foto = document.getElementById('foto')
+
+</script>
