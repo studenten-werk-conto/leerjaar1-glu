@@ -307,7 +307,7 @@ blockquote {font-family:Georgia, "Times New Roman", Times, serif; font-style: it
 /************************************************************************************/
 
 .container{
-        display: flexbox;
+        display: flex;
 }
 .left {
 	float:left;

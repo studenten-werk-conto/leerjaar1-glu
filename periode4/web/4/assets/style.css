@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+}
+header{
+    width: 100%;
+    height: 117px;
+    background-color: hsl(218, 58%, 13%);
+}
+.cardBig{
+    height: 1285px;
+    background-color: aqua;
+    width: 100%;
+}
