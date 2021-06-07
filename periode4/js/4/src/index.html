@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boodschappen lijstje</title>
+</head>
+
+<body>
+    <ul class="pages">
+        <li class="chat page">
+            <div class="chatArea">
+                <ul class="messages"></ul>
+            </div>
+            <input id="inputMessage" placeholder="Type here..." />
+        </li>
+    </ul>
+    <script type="module" src="../node_modules/sockjs-client/dist/sockjs.min.js"></script>
+    <script>
+        import io from "socket.io-client";
+        const socket = io();
+        const inputfield = document.getElementById('inputMessage')
+        
+        inputfield.addEventListener('change',() => console.log('owo'))
+        </script>
+
+</body>
+
+</html>
