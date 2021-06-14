@@ -17,14 +17,8 @@
             <input id="inputMessage" placeholder="Type here..." />
         </li>
     </ul>
-    <script type="module" src="../node_modules/sockjs-client/dist/sockjs.min.js"></script>
-    <script>
-        import io from "socket.io-client";
-        const socket = io();
-        const inputfield = document.getElementById('inputMessage')
-        
-        inputfield.addEventListener('change',() => console.log('owo'))
-        </script>
+    <script src="../node_modules/socket.io/client-dist/socket.io.min.js"></script>
+    <script src="./main.js"></script>
 
 </body>
 

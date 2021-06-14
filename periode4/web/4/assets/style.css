@@ -13,10 +13,15 @@ header{
 }
 #cardBig1{
     text-align: center;
-    text-col
     margin-top: auto;
     margin-bottom: auto;
 }
 #cardBig1TextBig{
     font-size: xx-large;
+}
+#findcard input{
+    border: 1px black;
+    border-style: solid;
+    border-radius: 3px;
+
 }

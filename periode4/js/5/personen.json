@@ -1,0 +1,59 @@
+{
+    "jedi masters":[
+        {
+            "id":0,
+            "name":"Qui-Gon Jinn",
+            "Species": "Human",
+            "Trained by": "Count Dooku",
+            "Rank": "Jedi Master",
+            "Holocron bio": "The Jedi who discovered Anakin Skywalker and determined that he was the Chosen One who would bring balance to the Force."
+        },
+        {
+            "id":1,
+            "name":"Anakin Skywalker",
+            "Species" : "Human",
+            "Trained by" : "Obi-Wan Kenobi",
+            "Rank": "Jedi Knight",
+            "Holocron bio": "The boy immaculately conceived via midi-chlorians who grew up to become a great Jedi, only to be seduced by the Dark Side, assist in the decimation of the Order, and become the hated Sith Lord Darth Vader."
+        },
+        {
+            "id":2,
+            "name":"Mace Windu",
+            "Species": "Human",
+            "Homeworld": "Haruun Kal",
+            "Rank": "Jedi Master",
+            "Holocron bio": "The most senior member of the Jedi Council, aside from Yoda, during the Clone Wars. In later years, Imperial propaganda claimed Mace Windu had been the leader of a “criminal gang” who caused the start of the wars."
+        },
+        {
+            "id": 3,
+            "name":"Plo Koon",  	
+            "Species": "Kel Dor",
+            "Homeworld": "Dorin",
+            "Rank": "Jedi Master",
+            "Holocron bio": "Plo Koon first discovered the Force-sensitive child Ahsoka Tano, who would eventually become Anakin Skywalker’s Padawan. This Council member required a mask when in oxygen atmospheres due to his Kel Dor physiology."
+
+        }
+    ],
+    "clonetroopers":[
+        {
+            "id": 0,
+            "squadname":"bank's squad",
+            "served": "Grand Army of the republic",
+            "members": ["ghost","skye","crazy legs","cutter","oznek","oznek"]
+        },
+        {
+            "id": 1,
+            "squadname":"aiwha squad",
+            "served": "Grand Army of the republic's navy",
+            "members": ["1137","1139","1151 16","17","23","35"]
+            
+        },
+        {
+            "id": 2,
+            "squadname":"aiwha squad",
+            "served": "Grand Army of the republic",
+            "members": ["CT-1008","CT-1410","CT-1509","CT-2005","CT-2602","CT-27-3555"]
+            
+        }
+    ]
+}
