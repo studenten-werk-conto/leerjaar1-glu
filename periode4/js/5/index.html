@@ -10,40 +10,52 @@
 <div id="container">
     <div onclick="back()" class="button">back</div>
     <div class="box">
-        <div id="boxup">boxup</div>
+        <img src= "" id="boxup">
         <div id="boxdown">
-            naam 
-            soort
-            planeet
-            rang
-            bio
+            
         </div>
     </div>
     <div onclick="next()" class="button">next</div>
     <script>
         let boxdown = document.getElementById('boxdown')
+        let boxup = document.getElementById('boxup')
 
         let type // for some reason this will make the function show() work who knows why only the ecma script founders know 
-        let number
+        let number = 0
 
         function back(){
             console.info('back')
+            show('jedi',number--)
         }
         function next(){
-            console.info('back')
+            console.info('next')
+            show('jedi',number++)
+            
         }
         function show(type, number){
-            console.info("the troop you want is: " + type + " and the number you want is: " + number)
             const data = objectData.jedi[number]
-            boxdown.innerHTML = (JSON.stringify(data))
+            console.log(data)
+
+            boxdown.innerHTML = "" // clears the boxes so it can be filled
+            boxup.src = ""
+
+            if (number > Object.keys(data)) {
+                console.log(number + " fuck fuc")
+            }
             
 
-            for (let index = 0; index < data.length; index++) {
-                console.log('a')
-                
-            }
+            // first the json is made into a string and then the "'s are removed and then inserted 
+            // TODO clean this fucking mess
+            boxdown.innerHTML += ("name: " + JSON.stringify(data.name).replace(/\"/g, ""))
+            boxdown.innerHTML += ("<br>" + "species: " + JSON.stringify(data.Species).replace(/\"/g, ""))
+            boxdown.innerHTML += ("<br>" + "trained: " + JSON.stringify(data.trained).replace(/\"/g, ""))
+            boxdown.innerHTML += ("<br>" + "rank: " + JSON.stringify(data.Rank).replace(/\"/g, ""))
+            boxdown.innerHTML += ("<br>" + "bio: " + JSON.stringify(data.bio).replace(/\"/g, ""))
+            boxup.src = JSON.stringify(data.photo).replace(/\"/g, "")
+
+            
         }
-        function load(){
+        function load(){ // magic?
             fetch('personen.json')
             .then(Response => Response.json())
             .then(data => init(data));
@@ -52,6 +64,7 @@
             objectData = data;
             console.log(objectData)
         }
+        
         load()
         
     </script>
@@ -62,7 +75,7 @@
         .button{
             height: 90px;
             width: 90px;
-            background-color: black;
+            background-color: rgb(121, 88, 88);
             border-radius: 4px;
         }
         .box{

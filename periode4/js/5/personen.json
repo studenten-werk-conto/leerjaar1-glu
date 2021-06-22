@@ -3,27 +3,28 @@
             "id": 0,
             "name": "Qui-Gon Jinn",
             "Species": "Human",
-            "Trained by": "Count Dooku",
+            "trained": "Count Dooku",
             "Rank": "Jedi Master",
-            "Holocron bio": "The Jedi who discovered Anakin Skywalker and determined that he was the Chosen One who would bring balance to the Force.",
+            "bio": "The Jedi who discovered Anakin Skywalker and determined that he was the Chosen One who would bring balance to the Force.",
             "photo": "https://static.wikia.nocookie.net/starwars/images/f/f6/Qui-Gon_Jinn_Headshot_TPM.jpg/revision/latest?cb=20180430174809"
         },
         {
             "id": 1,
             "name": "Anakin Skywalker",
             "Species": "Human",
-            "Trained by": "Obi-Wan Kenobi",
+            "trained": "Obi-Wan Kenobi",
             "Rank": "Jedi Knight",
-            "Holocron bio": "The boy immaculately conceived via midi-chlorians who grew up to become a great Jedi, only to be seduced by the Dark Side, assist in the decimation of the Order, and become the hated Sith Lord Darth Vader.",
+            "bio": "The boy immaculately conceived via midi-chlorians who grew up to become a great Jedi, only to be seduced by the Dark Side, assist in the decimation of the Order, and become the hated Sith Lord Darth Vader.",
             "photo": "https://www.serietotaal.nl/images/nieuws/t/x8ea05l1sb2w-full.jpg"
         },
         {
             "id": 2,
             "name": "Mace Windu",
             "Species": "Human",
+            "trained": "??",
             "Homeworld": "Haruun Kal",
             "Rank": "Jedi Master",
-            "Holocron bio": "The most senior member of the Jedi Council, aside from Yoda, during the Clone Wars. In later years, Imperial propaganda claimed Mace Windu had been the leader of a “criminal gang” who caused the start of the wars.",
+            "bio": "The most senior member of the Jedi Council, aside from Yoda, during the Clone Wars. In later years, Imperial propaganda claimed Mace Windu had been the leader of a “criminal gang” who caused the start of the wars.",
             "photo": "https://static.wikia.nocookie.net/starwars/images/f/fc/Mace_Windu.jpg/revision/latest?cb=20071230055326"
         },
         {
@@ -31,8 +32,9 @@
             "name": "Plo Koon",
             "Species": "Kel Dor",
             "Homeworld": "Dorin",
+            "trained": "??",
             "Rank": "Jedi Master",
-            "Holocron bio": "Plo Koon first discovered the Force-sensitive child Ahsoka Tano, who would eventually become Anakin Skywalker’s Padawan. This Council member required a mask when in oxygen atmospheres due to his Kel Dor physiology.",
+            "bio": "Plo Koon first discovered the Force-sensitive child Ahsoka Tano, who would eventually become Anakin Skywalker’s Padawan. This Council member required a mask when in oxygen atmospheres due to his Kel Dor physiology.",
             "photo": "https://static.wikia.nocookie.net/starwars/images/b/bf/PloKoonCardTrader.png/revision/latest?cb=20180213154354"
 
         }
