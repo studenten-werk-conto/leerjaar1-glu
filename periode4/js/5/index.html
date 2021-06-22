@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <div onclick="back()" class="button">back</div>
+    <div class="box">
+        <div id="boxup">boxup</div>
+        <div id="boxdown">
+            naam 
+            soort
+            planeet
+            rang
+            bio
+        </div>
+    </div>
+    <div onclick="next()" class="button">next</div>
+    <script>
+        let boxdown = document.getElementById('boxdown')
+
+        let type // for some reason this will make the function show() work who knows why only the ecma script founders know 
+        let number
+
+        function back(){
+            console.info('back')
+        }
+        function next(){
+            console.info('back')
+        }
+        function show(type, number){
+            console.info("the troop you want is: " + type + " and the number you want is: " + number)
+            const data = objectData.jedi[number]
+            boxdown.innerHTML = (JSON.stringify(data))
+            
+
+            for (let index = 0; index < data.length; index++) {
+                console.log('a')
+                
+            }
+        }
+        function load(){
+            fetch('personen.json')
+            .then(Response => Response.json())
+            .then(data => init(data));
+        }
+        function init(data){
+            objectData = data;
+            console.log(objectData)
+        }
+        load()
+        
+    </script>
+    <style>
+        #container{
+            display: flex;
+        }
+        .button{
+            height: 90px;
+            width: 90px;
+            background-color: black;
+            border-radius: 4px;
+        }
+        .box{
+            width: 300px;
+            min-height: 300px;
+            background-color: aquamarine;
+            border-radius: 4px;
+        }
+        #boxup{
+            width: 100%;
+            height: 150px;
+        }
+        #boxdown{
+            width: 100%;
+            min-height: 150px;
+        }
+    </style>
+    </div>
+</body>
+</html>
