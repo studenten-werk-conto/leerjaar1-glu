@@ -1,0 +1,3 @@
+//fetch code
+function fetchjsonfromapi(){
+    

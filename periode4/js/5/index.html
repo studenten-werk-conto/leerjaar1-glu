@@ -8,14 +8,15 @@
 </head>
 <body>
 <div id="container">
-    <div onclick="back()" class="button">back</div>
+    <div onclick="show('jedi',number--)" class="button">back</div>
     <div class="box">
         <img src= "" id="boxup">
         <div id="boxdown">
             
         </div>
+    
     </div>
-    <div onclick="next()" class="button">next</div>
+    <div onclick="show('jedi',number++)" class="button">next</div>
     <script>
         let boxdown = document.getElementById('boxdown')
         let boxup = document.getElementById('boxup')
@@ -24,12 +25,14 @@
         let number = 0
 
         function back(){
-            console.info('back')
-            show('jedi',number--)
+            // console.info('back')
+            const t = number--
+            show('jedi', t)
         }
         function next(){
-            console.info('next')
-            show('jedi',number++)
+            // console.info('next')
+            const t = number++
+            show('jedi', t)
             
         }
         function show(type, number){
@@ -39,12 +42,12 @@
             boxdown.innerHTML = "" // clears the boxes so it can be filled
             boxup.src = ""
 
-            if (number >= 3 ) { // TODO FIX shitty attempt to make it fold over to the first one
-                console.log(" fuck fuc" + number)
-                show('jedi',0)
-            } else{
-                console.log('owowoowowowo')
-            }
+            // if (number >= 3 ) { // TODO FIX shitty attempt to make it fold over to the first one
+            //     console.log(" fuck fuc" + number)
+            //     show('jedi',0)
+            // } else{
+            //     console.log('owowoowowowo')
+            // }
             
 
             // first the json is made into a string and then the "'s are removed and then inserted 
@@ -75,12 +78,12 @@
         #container{
             display: flex;
         }
-        .button{
+        /* .button{
             height: 90px;
             width: 90px;
             background-color: rgb(121, 88, 88);
             border-radius: 4px;
-        }
+        } */
         .box{
             width: 300px;
             min-height: 300px;

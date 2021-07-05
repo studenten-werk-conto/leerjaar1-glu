@@ -1,0 +1,88 @@
+*{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+/* #menuname{
+    text-decoration-color: #da3836;
+    margin-top: auto;
+    margin-bottom: auto;
+    float: left;
+} */
+header{
+    height: 67px;
+    background-color: white;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav{
+    display: flex;
+    text-align: center;
+    /* width: 49%; */
+    float: right;
+    
+}
+#knopmenu{
+    min-width: 16%;
+    min-height: 30px;
+    background-color: #eb4947;
+    border-radius: 3px;
+}
+#kaart1{
+    height: 1337px;
+    background-color: #c0c0c0;
+    display: flex;
+}
+#kaart1 main{
+    width: 67%;
+    
+}
+#kaart1 aside{
+    width: 33%;
+    float: right;
+    display: block;
+}
+#kaart1 img{
+    width: 100%;
+}
+#profielfoto{
+    /* display: block; */
+}
+#kaart2{
+    height: 554px;
+    display: flex;
+    
+}
+#pencils{
+    
+}
+
+#kaart3{
+    height: 1337px;
+    background-color: #c0c0c0;
+
+}
+.kaarttekst::before {
+    background-color: #da3836;
+    margin-right: 1em;
+    height: 1em;
+    width: 2em;
+
+}
+#form{
+    border-radius: 10px;
+    width: 87%;
+}
+#form input{
+    border-color: #c0c0c0;
+    width: 30%;
+}
+#form textarea{
+    width: 100%;
+}
+
+#kaart4{
+    height: 66px;
+    background-color: #da3836;
+}
